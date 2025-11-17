@@ -1,0 +1,518 @@
+sno,id,project_id,account_id,role,roleCode,location,revised,originalStartDate,allocationEndDate,allocationPercentage,probability,status,resourceMapped,comment,lastUpdatedBy,updatedOn,addedBy,addedOn,startMonth,billingRate,fulfillmentDate
+1,1,41,32,Application Engineer,AE,Offshore,,03-01-2025,,100,100,Allocated,,Trained in both Unqork & EIgen,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Mar,,06-03-2025
+2,2,41,32,Application Engineer,AE,Offshore,,03-01-2025,,100,100,Allocated,,Trained in both Unqork & EIgen,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Mar,,06-03-2025
+3,3,41,32,Application Engineer,AE,Offshore,,03-01-2025,,100,100,Allocated,,Trained in both Unqork & EIgen,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Mar,,06-03-2025
+4,4,41,32,QA Performance Engineer,QA Perf,Offshore,,1/15/2025,,100,100,Abandoned,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,,
+5,5,41,32,Project Manager,PM,Offshore,,03-01-2025,,100,100,Allocated,,Replacement of Suresh,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Mar,,3/17/2025 0:00
+6,6,42,33,UX Designer,UXD,Onshore,,11/15/2024,10-12-2024,50,50,Abandoned,,Opp to be confirmed,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:00,24-Nov,,
+7,7,42,33,Project Manager,PM,Offshore,,11/15/2024,10-12-2024,50,50,Abandoned,,Opp to be confirmed,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:00,24-Nov,,
+8,8,42,33,UX Designer,UXD,Offshore,,11/15/2024,10-12-2024,50,50,Abandoned,,Opp to be confirmed,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:00,24-Nov,,
+9,9,42,33,UX Engineer,UXE,Onshore,,11/15/2024,,100,50,Abandoned,,Opp to be confirmed,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:00,24-Nov,,
+10,10,42,33,Application Engineer,AE,Offshore,,11/15/2024,,100,50,Abandoned,,Opp to be confirmed,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:00,24-Nov,,
+11,11,32,27,Solution Architect,SA,Onshore,,01-01-2025,,100,100,Allocated,,Kenil is current SA,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,,06-03-2025
+12,12,32,27,Application Engineer,AE,Onshore,,02-01-2025,12/31/2025,100,100,Allocated,,Extension to 2024 Work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Feb,,06-03-2025
+13,13,32,27,Application Engineer,AE,Offshore,,02-01-2025,12/31/2025,100,100,Allocated,,Extension to 2024 Work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Feb,,06-03-2025
+14,14,32,27,Solution Architect,SA,Onshore,,02-01-2025,12/31/2025,100,100,Allocated,,Extension to 2024 Work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Feb,,06-03-2025
+15,15,61,27,Application Engineer,AE,Offshore,,01-01-2025,4/30/2025,100,100,Abandoned,,Regulatory Timesensitive work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,,
+16,16,61,27,Application Engineering Lead,AE Lead,Onshore,,01-01-2025,3/31/2025,25,100,Abandoned,,Regulatory Timesensitive work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,,
+17,17,61,27,Application Engineering Lead,AE Lead,Onshore,,01-01-2025,1/31/2025,100,100,Allocated,,Regulatory Timesensitive work,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,,06-03-2025
+18,18,52,27,Solution Architect,SA,Onshore,,04-01-2025,7/31/2025,50,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+19,19,52,27,Business Analyst,BA,Onshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+20,20,52,27,Application Engineering Lead,AE Lead,Onshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+21,21,52,27,Project Manager,PM,Offshore,,04-01-2025,7/31/2025,50,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+22,22,52,27,UX Designer,UXD,Onshore,,04-01-2025,7/31/2025,50,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+23,23,52,27,Application Engineer,AE,Offshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+24,24,52,27,Application Engineer,AE,Offshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+25,25,52,27,Application Engineer,AE,Offshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+26,26,52,27,QA Engineer Lead,QA Lead,Offshore,,04-01-2025,7/31/2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+27,27,52,27,QA Engineer,QA,Offshore,,04-01-2025,7/31/2025,100,100,Abandoned,, ,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+28,28,52,27,UX Engineer,UXE,Offshore,,04-01-2025,7/31/2025,50,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+29,29,52,27,QA Performance Engineer,QA Perf,Offshore,,04-01-2025,7/31/2025,25,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Apr,,
+30,30,54,41,Solution Architect,SA,Onshore,,01-01-2025,3/31/2025,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-Jan,235,1/13/2025 0:00
+31,31,55,42,UX Designer,UXD,Onshore,,01-06-2025,07-07-2026,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+32,32,55,42,UX Designer,UXD,Offshore,,01-06-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+33,33,55,42,QA Performance Engineer,QA Perf,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,To be onboarded from 21st April.,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+34,34,55,42,Senior Solution Architect,Sr. SA,Onshore,,01-06-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+35,35,55,42,Application Engineering Lead,AE Lead,Offshore,,01-06-2025,07-07-2026,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+36,36,41,32,Application Engineer,AE,Offshore,,5/15/2025,,100,100,Allocated,,Trained in both Unqork & EIgen,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:00,25-May,,06-03-2025
+37,37,41,32,Engagement Manager,EM,Offshore,,05-01-2025,,100,100,Allocated,Ram Mohan,Offshore EM,Yogi B,6/26/2025 0:00,Yogi B,06-03-2025 00:00,25-May,0,06-06-2025
+38,38,55,42,Scrum Master,Scrum,Offshore,,01-06-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+39,39,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+40,40,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,parmeshwar Sahu,Parimi's Replacement for Integration POD,Yogi B,07-01-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-02-2025
+41,41,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+42,42,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+43,43,55,42,UX Engineer,UXE,Onshore,,02-01-2025,07-07-2026,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+44,44,55,42,UX Engineer,UXE,Offshore,,02-01-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+45,45,55,42,QA Engineer,QA,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+46,46,55,42,QA Engineer,QA,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+47,47,55,42,Solution Architect,SA,Offshore,,01-06-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+48,48,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+49,49,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+50,50,55,42,Application Engineering Lead,AE Lead,Offshore,,01-06-2025,07-07-2026,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Jan,,06-03-2025
+51,51,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+52,52,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+53,53,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+54,54,55,42,Application Engineer,AE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+55,55,55,42,QA Engineer Lead,QA Lead,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+56,56,55,42,QA Engineer,QA,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+57,57,55,42,QA Engineer,QA,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+58,58,55,42,UX Engineer,UXE,Offshore,,02-05-2025,07-07-2026,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Suyash Sukhwal,06-03-2025 00:00,25-Feb,,06-03-2025
+59,59,56,36,Project Manager,PM,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:00,25-Jan,,8/22/2025
+60,60,56,36,Solution Architect,SA,Offshore,,1/15/2025,,50,100,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,
+61,61,56,36,Application Engineering Lead,AE Lead,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+62,62,56,36,Application Engineer,AE,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+63,63,56,36,Application Engineer,AE,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+64,64,56,36,Business Analyst,BA,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+65,65,56,36,UX Designer,UXD,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+66,66,56,36,UX Engineer,UXE,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+67,67,56,36,QA Engineer,QA,Offshore,,1/15/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Jan,,8/22/2025
+68,68,70,52,Scrum Master,Scrum,Offshore,,03-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+69,69,70,52,Solution Architect,SA,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+70,70,70,52,Application Engineering Lead,AE Lead,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+71,71,70,52,Business Analyst,BA,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+72,72,70,52,Sr. Application Engineer,Sr. AE,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+73,73,70,52,Sr. Application Engineer,Sr. AE,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+74,74,70,52,Application Engineer,AE,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+75,75,70,52,Application Engineer,AE,Offshore,,03-01-2025,,100,75,Abandoned,,,Yogi B,10/14/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+76,76,70,52,Application Engineer,AE,Offshore,,03-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+77,77,70,52,Application Engineer,AE,Offshore,,03-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+78,78,70,52,Application Engineering Lead,AE Lead,Offshore,,03-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+79,79,70,52,QA Engineer,QA,Offshore,,03-01-2025,,100,50,Abandoned,,Yogi - hiring needed assuming Ms Amlin and Lockton wellness start in Jan,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+80,80,70,52,QA Engineer,QA,Offshore,,03-01-2025,,100,50,Abandoned,,Yogi - hiring needed assuming Ms Amlin and Lockton wellness start in Jan,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+81,81,70,52,UX Engineer,UXE,Offshore,,03-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,,
+82,82,27,23,Application Engineer,AE,Offshore,,01-01-2025,,100,100,Abandoned,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:01,25-Jan,45,
+83,83,27,23,Application Engineer,AE,Offshore,07-01-2025,01-01-2025,,100,100,Abandoned,,"Replacement for Shoib
+On hOld till further confirmation from Client.",Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:01,25-Jul,45,
+84,84,27,23,Application Engineer,AE,Offshore,,01-01-2025,,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:01,25-Jan,45,06-03-2025
+85,85,65,4,Application Engineer,AE,Offshore,,01-01-2024,,100,100,Allocated,,Vishal to confirm on release of Usha/Manogna,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,24-Jan,,8/22/2025
+86,86,65,4,Application Engineer,AE,Onshore,,01-01-2024,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,24-Jan,,8/22/2025
+87,87,65,4,Application Engineer,AE,Offshore,,02-03-2025,,100,100,Abandoned,,Client interview Pending,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Feb,,
+88,88,65,4,Application Engineer,AE,Offshore,,02-03-2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Feb,,8/22/2025
+89,89,27,23,Application Engineer,AE,Offshore,,01-01-2025,,100,100,Abandoned,,,Yogi B,08-12-2025 00:00,Yogi B,06-03-2025 00:01,25-Jan,45,
+90,90,65,4,Application Engineer,AE,Offshore,,4/15/2025,,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Apr,,
+91,91,44,35,Engagement Manager,EM,Offshore,,03-10-2025,9/15/2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,50,3/17/2025 0:00
+92,92,44,35,Senior Solution Architect,Sr. SA,Offshore,,03-10-2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,65,04-07-2025 00:00
+93,93,44,35,UX Designer,UXD,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,42,3/17/2025 0:00
+94,94,44,35,UX Engineer,UXE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,36,3/17/2025 0:00
+95,95,44,35,QA Engineer Lead,QA Lead,Offshore,,03-10-2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,40,3/17/2025 0:00
+96,96,44,35,Application Engineering Lead,AE Lead,Offshore,,03-10-2025,,100,100,Allocated,,Technical Lead,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,48,3/17/2025 0:00
+97,97,44,35,Scrum Master,Scrum,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,36,3/17/2025 0:00
+98,98,44,35,Scrum Master,Scrum,Offshore,,3/25/2025,,100,100,Allocated,,New Hire,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,36,04-07-2025 00:00
+99,99,44,35,Application Engineering Lead,AE Lead,Offshore,,03-10-2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,04-01-2025 00:00
+100,100,44,35,Application Engineering Lead,AE Lead,Offshore,,03-10-2025,,100,100,Allocated,,50% Available till april 14th,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+101,101,44,35,Application Engineering Lead,AE Lead,Offshore,,03-10-2025,,100,100,Allocated,,Insuremo,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,8/22/2025
+102,102,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+103,103,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+104,104,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+105,105,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+106,106,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,Hiring needed,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,06-02-2025
+107,107,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+108,108,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+109,109,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+110,110,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,Insuremo,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+111,111,44,35,Application Engineer,AE,Offshore,,3/25/2025,,100,100,Allocated,,Insuremo,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,45,3/17/2025 0:00
+112,112,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,32,04-01-2025 00:00
+113,113,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,,To join end of april,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,32,8/22/2025
+114,114,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,32,4/14/2025 0:00
+115,115,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,,To join on 5th May,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-03-2025 00:01,25-Mar,32,8/22/2025
+116,116,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,N,Automation Engineer,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,32,8/22/2025
+117,117,44,35,QA Engineer,QA,Offshore,,3/25/2025,,100,100,Allocated,N,Automation Engineer,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,32,8/22/2025
+118,118,44,35,QA Performance Engineer,QA Perf,Offshore,,3/25/2025,,100,100,Allocated,N,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:01,25-Mar,32,06-02-2025
+119,119,43,34,Engagement Manager,EM,Onshore,,04-01-2025,,100,90,Abandoned,,To be Hired- Rotated with existing PM for Travel.,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:01,25-Apr,,
+120,120,43,34,UX Designer,UXD,Onshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+121,121,43,34,Project Manager,PM,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+122,122,43,34,Business Analyst,BA,Onshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+123,123,43,34,Business Analyst,BA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+124,124,43,34,Business Analyst,BA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+125,125,43,34,Solution Architect,SA,Onshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+126,126,43,34,Solution Architect,SA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+127,127,43,34,Solution Architect,SA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+128,128,43,34,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+129,129,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+130,130,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+131,131,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+132,132,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+133,133,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+134,134,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+135,135,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+136,136,43,34,Application Engineer,AE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+137,137,43,34,QA Engineer Lead,QA Lead,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+138,138,43,34,QA Engineer,QA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+139,139,43,34,QA Engineer,QA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+140,140,43,34,QA Engineer,QA,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+141,141,43,34,UX Engineer,UXE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+142,142,43,34,UX Engineer,UXE,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+143,143,43,34,QA Performance Engineer,QA Perf,Offshore,,04-01-2025,,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Apr,,
+144,144,45,10,Engagement Manager,EM,Onshore,,3/24/2025,5/23/2025,50,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+145,145,45,10,Solution Architect,SA,Onshore,,03-01-2025,5/23/2025,25,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+146,146,45,10,UX Designer,UXD,Offshore,,03-01-2025,5/23/2025,25,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+147,147,45,10,UX Engineer,UXE,Offshore,,03-01-2025,5/23/2025,75,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+148,148,45,10,Business Analyst,BA,Offshore,,03-01-2025,5/23/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+149,149,45,10,Application Engineering Lead,AE Lead,Offshore,,03-01-2025,5/23/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+150,150,45,10,Application Engineer,AE,Offshore,,03-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+151,151,45,10,Application Engineer,AE,Offshore,,03-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+152,152,45,10,QA Engineer,QA,Offshore,,03-10-2025,5/23/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Vishal Khajuria,06-03-2025 00:02,25-Mar,,
+153,153,57,36,Project Manager,PM,Offshore,,04-01-2025,07-11-2025,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+154,154,57,36,UX Designer,UXD,Offshore,,04-01-2025,04-04-2025,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+155,155,57,36,UX Engineer,UXE,Offshore,,04-01-2025,4/18/2025,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+156,156,57,36,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,7/31/2025,100,100,Allocated,Saidebaji,,Yogi B,07-01-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-02-2025
+157,157,57,36,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,6/30/2025,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+158,158,57,36,Application Engineer,AE,Offshore,,04-01-2025,06-06-2025,100,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+159,159,57,36,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,7/31/2025,100,100,Allocated,,Insuremo,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+160,160,57,36,QA Engineer Lead,QA Lead,Offshore,6/16/2025,04-01-2025,07-11-2025,100,100,Allocated,Harsha,,Yogi B,07-01-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Jun,,06-09-2025
+161,161,57,36,Business Analyst,BA,Offshore,,04-01-2025,07-11-2025,50,100,Allocated,,,Yogi B,06-03-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-Apr,,06-03-2025
+162,162,57,36,Solution Architect,SA,Offshore,,05-01-2025,5/19/2025,50,100,Allocated,Param,,Yogi B,07-01-2025 00:00,Sreevalli Sista,06-03-2025 00:02,25-May,,06-02-2025
+163,163,2,2,Application Engineer,AE,Offshore,,2/15/2025,,100,90,Allocated,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:02,25-Feb,,02-03-2025 00:00
+164,164,63,46,Solution Architect,SA,Onshore,,3/15/2025,5/15/2025,50,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Mar,,
+165,165,63,46,Application Engineer,AE,Offshore,,3/15/2025,5/15/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Mar,,
+166,166,63,46,Application Engineer,AE,Offshore,,3/15/2025,5/15/2025,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Mar,,
+167,167,32,27,Application Engineering Lead,AE Lead,Offshore,,2/15/2025,12/31/2025,100,100,Allocated,,Replacement of Anjaneya,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:02,25-Feb,45,4/16/2025 0:00
+168,168,53,40,Solution Architect,SA,Onshore,,03-01-2025,5/31/2025,25,100,Abandoned,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:02,25-Mar,,
+169,169,53,40,Solution Architect,SA,Offshore,,03-01-2025,3/31/2025,25,100,Abandoned,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:02,25-Mar,,
+170,170,53,40,Application Engineering Lead,AE Lead,Offshore,,03-01-2025,3/31/2025,100,100,Abandoned,,,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:02,25-Mar,,
+171,171,46,26,Solution Architect,SA,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+172,172,46,26,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+173,173,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+174,174,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+175,175,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+176,176,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+177,177,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+178,178,46,26,Application Engineer,AE,Offshore,,04-01-2025,12/31/2025,100,75,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+179,179,46,26,Application Engineering Lead,AE Lead,Onshore,,04-01-2025,12/31/2025,100,50,Abandoned,,Exact role to be confirmed,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:02,25-Apr,,
+180,180,46,26,Solution Architect,SA,Onshore,,04-01-2025,12/31/2025,100,50,Abandoned,,Onshore UK,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+181,181,46,26,Solution Architect,SA,Onshore,,04-01-2025,12/31/2025,100,50,Abandoned,,Onshore Aus,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+182,182,20,17,QA Performance Engineer,QA Perf,Offshore,,03-01-2025,3/31/2025,100,100,Allocated,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,,03-01-2025 00:00
+183,183,59,44,Senior Solution Architect,Sr. SA,Offshore,,03-01-2025,04-04-2025,25,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,123,4/14/2025 0:00
+184,184,59,44,Application Engineering Lead,AE Lead,Offshore,,03-01-2025,04-04-2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,41,4/14/2025 0:00
+185,185,59,44,UX Engineer,UXE,Offshore,,03-01-2025,04-04-2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,41,4/14/2025 0:00
+186,186,59,44,Application Engineer,AE,Offshore,,03-01-2025,04-04-2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,33,4/14/2025 0:00
+187,187,59,44,QA Engineer,QA,Offshore,,03-01-2025,04-04-2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,33,4/14/2025 0:00
+188,188,47,36,Project Manager,PM,Offshore,,03-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,,
+189,189,47,36,Solution Architect,SA,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+190,190,47,36,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+191,191,47,36,Application Engineer,AE,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+192,192,47,36,Application Engineer,AE,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+193,193,47,36,Application Engineer,AE,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+194,194,47,36,QA Engineer,QA,Offshore,,05-01-2025,7/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-May,,
+195,195,47,36,QA Engineer,QA,Offshore,,05-01-2025,7/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-May,,
+196,196,47,36,UX Designer,UXD,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+197,197,47,36,UX Engineer,UXE,Offshore,,04-01-2025,5/31/2025,100,75,Abandoned,,,Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+198,198,64,47,Technical Writer,TW,Onshore,,04-01-2025,,100,100,Allocated,,Replacement for quits,Yogi B,06-03-2025 00:00,Tharun M,06-03-2025 00:03,25-Apr,,06-03-2025
+199,199,64,47,Technical Writer,TW,Offshore,,04-01-2025,,100,100,Allocated,Y,Replacement for Jaswitha,Yogi B,06-03-2025 00:00,Tharun M,06-03-2025 00:03,25-Apr,,06-03-2025
+200,200,40,7,Application Engineer,AE,Offshore,,03-10-2025,05-05-2025,100,100,Allocated,,,Yogi B,10-09-2025 00:00,Yogi B,06-03-2025 00:03,25-Mar,,10-09-2025
+201,201,40,7,Application Engineer,AE,Offshore,,03-10-2025,05-05-2025,100,100,Allocated,,,Yogi B,10-09-2025 00:00,Yogi B,06-03-2025 00:03,25-Mar,,10-09-2025
+202,202,40,7,QA Engineer,QA,Offshore,,03-10-2025,05-05-2025,100,100,Allocated,,,Yogi B,10-09-2025 00:00,Yogi B,06-03-2025 00:03,25-Mar,,10-09-2025
+203,203,36,29,Sr. Application Engineer,Sr. AE,Offshore,,03-10-2025,04-11-2025,100,100,Abandoned,,Client isnt pursuing this request and shall be reopened upon client communication.,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,,
+204,204,67,49,QA Engineer,QA,Offshore,,3/17/2025,12/31/2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-Mar,,8/22/2025
+205,205,81,36,Application Engineering Lead,AE Lead,Offshore,,05-07-2025,,100,100,Abandoned,Y,Replacement for Mehar,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:03,25-May,,
+206,206,81,36,QA Engineer,QA,Offshore,,4/15/2025,,100,100,Abandoned,,Replacement for Sandeep ,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,,
+207,207,81,36,QA Engineer,QA,Offshore,,4/15/2025,,100,100,Allocated,Sravanthi Mottu,Replacement for Anil Ankulla ,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,,06-02-2025
+208,208,41,32,Scrum Master,Scrum,Offshore,,04-01-2025,,100,100,Abandoned,,Replacement For Anil - Not required,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,,
+209,209,75,18,Sr. Application Engineer,AE,Offshore,,4/15/2025,,100,100,Allocated,Parth Parmar,,Yogi B,08-12-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,20.5,05-01-2025
+210,210,82,36,Application Engineer,AE,Onshore,,06-01-2025,,100,100,Abandoned,,Data Engineer,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+211,211,82,36,Application Engineer,AE,Onshore,,06-01-2025,,100,100,Abandoned,,Program mgr with insurance experience,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+212,212,82,36,Program Director,Director,Onshore,,06-01-2025,,100,100,Abandoned,,Product Engineer - with strong exposure to low code,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+213,213,74,36,Application Engineer,AE,Onshore,,4/15/2025,,100,90,On Hold,,App support engineer - Any tech with exposure to unqork,Yogi B,10/24/2025 0:00,Yogi B,06-03-2025 00:03,25-Apr,,
+214,214,76,54,Application Engineer,AE,Onshore,,05-01-2025,,100,90,Abandoned,Y,App support Senior,Yogi B,10/16/2025 0:00,Yogi B,06-03-2025 00:03,25-May,,
+215,215,76,54,Application Engineer,AE,Offshore,,05-01-2025,,100,90,Mapped,Venkat Rao Jadda ,App support junior,Yogi B,10/16/2025 0:00,Yogi B,06-03-2025 00:03,25-May,,10/15/2025
+216,216,76,54,Application Engineer,AE,Offshore,,05-01-2025,,100,90,Abandoned,Y,CR and additional work,Yogi B,10/16/2025 0:00,Yogi B,06-03-2025 00:03,25-May,,
+217,217,20,17,Sr. Application Engineer,Sr. AE,Offshore,,05-01-2025,1/31/2026,100,100,Abandoned,Y,"Attrition Replacement 
+Interview will be there",Yogi B,10/21/2025 0:00,Yogi B,06-03-2025 00:03,25-May,25,
+218,218,8,7,Sr. QA Engineer,QA,Offshore,,05-01-2025,,100,90,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:03,25-May,30,05-05-2025 00:00
+219,219,31,15,Sr. Application Engineer,Sr. AE,Offshore,,4/15/2025,,100,100,Allocated,,"Replacement resource - Interview, Fingerprinting required, Can put resource who is getting released ",Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,50.6,4/21/2025 0:00
+220,220,82,36,Sr. Application Engineer,Sr. AE,Offshore,,4/21/2025,,100,100,Allocated,Avinash Kachare,,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,30,6/15/2025
+221,221,82,36,Sr. Application Engineer,Sr. AE,Offshore,,4/21/2025,,100,100,Abandoned,,,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,30,
+222,222,82,36,Engagement Manager,EM,Onshore,,4/21/2025,,100,100,Abandoned,Y,Product Owner,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,90,
+223,223,82,36,Application Engineer,Data Engineer,Offshore,,4/21/2025,,100,100,Abandoned,,,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Apr,30,
+224,224,69,51,Project Manager,PM,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+225,225,69,51,Solution Architect,SA,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+226,226,69,51,Business Analyst,BA,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+227,227,69,51,Sr. Frontend Developer ,AE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+228,228,69,51,Frontend  Developer ,AE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+229,229,69,51,Sr. Backend Developer ,AE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+230,230,69,51,Backend Developer ,AE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+231,231,69,51,QA Engineer,QA,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+232,232,69,51,QA Engineer,QA,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+233,233,69,51,UX Engineer,UXE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+234,234,69,51,UX Engineer,UXE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+235,235,69,51,Infra/DevOps,AE,Offshore,,06-01-2025,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:03,25-Jun,,
+236,236,55,42,Application Engineering Lead,AE Lead,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,Y,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Jun,50,06-02-2025
+237,237,55,42,Application Engineer,AE,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,Vinay Kaspa,Accelarator Augmentation,Yogi B,08-12-2025 00:00,Yogi B,06-03-2025 00:03,25-Jun,40,07-01-2025
+238,238,55,42,Application Engineer,AE,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Jun,40,06-02-2025
+239,239,55,42,Application Engineer,AE,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:03,25-Jun,40,06-02-2025
+240,240,55,42,Application Engineer,AE,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,40,06-02-2025
+241,241,55,42,QA Engineer Lead,QA Lead,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,Harsha,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,45,06-02-2025
+242,242,55,42,QA Engineer,QA,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,N,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,35,06-02-2025
+243,243,55,42,QA Engineer,QA,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,N,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,35,06-02-2025
+244,244,55,42,UX Engineer,UXE,Offshore,,06-01-2025,7/31/2025,100,100,Allocated,,Accelarator,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,40,06-03-2025
+245,245,55,42,Solution Architect,SA,Offshore,06-04-2025,06-01-2025,7/31/2025,100,100,Allocated,Y,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:04,25-Jun,58,06-03-2025
+246,246,73,35,UX Designer,UXD,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+247,247,73,35,UX Engineer,UXE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+248,248,73,35,QA Engineer Lead,QA Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+249,249,73,35,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+250,250,73,35,Scrum Master,Scrum,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+251,251,73,35,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+252,252,73,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+253,253,73,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+254,254,73,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+255,255,73,35,QA Engineer,QA,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+256,256,73,35,QA Engineer,QA,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+257,257,73,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,Insuremo,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+258,258,80,35,UX Designer,UXD,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+259,259,80,35,UX Engineer,UXE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+260,260,80,35,QA Engineer Lead,QA Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+261,261,80,35,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+262,262,80,35,Scrum Master,Scrum,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+263,263,80,35,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+264,264,80,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+265,265,80,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+266,266,80,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+267,267,80,35,QA Engineer,QA,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+268,268,80,35,QA Engineer,QA,Offshore,,04-01-2025,,100,75,Abandoned,,,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+269,269,80,35,Application Engineer,AE,Offshore,,04-01-2025,,100,75,Abandoned,,Insuremo,Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,,
+271,271,78,3,Application Engineering Lead,AE Lead,Onshore,,04-01-2025,05-05-2025,100,100,Allocated,Rajesh Penki,Prasanna's referral,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,75,06-02-2025
+272,272,78,3,Sr. Application Engineer,Sr. AE,Onshore,,04-01-2025,05-05-2025,100,100,Allocated,Uma,Releasing from CoOp - to be confirmed,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,65,06-02-2025
+273,273,78,3,Sr. Application Engineer,Sr. AE,Onshore,,04-01-2025,05-05-2025,100,100,Allocated,Dinesh Thota,Releasing from CoOp by 1-Jun,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,65,05-01-2025
+274,274,78,3,Sr. Application Engineer,Sr. AE,Onshore,,04-01-2025,05-05-2025,100,100,Allocated,Amrithvarshan,Releasing from CoOp by 1-Jun,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,65,05-01-2025
+275,275,78,3,Sr. Application Engineer,Sr. AE,Onshore,,04-01-2025,05-05-2025,100,100,Allocated,Rohit Kuchibotla,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,65,05-01-2025
+276,276,78,3,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Dirk Peters, to be join on 7th June.,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,06-02-2025
+277,277,78,3,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,PK,Available from 1st June.,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,06-02-2025
+278,278,78,3,Application Engineering Lead,AE Lead,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Anjaneya,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,06-02-2025
+279,279,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Likith Reddy,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-01-2025
+280,280,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Yogeesh A,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-01-2025
+281,281,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Vasishta Jasti,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-04-2025
+282,282,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Subrahmanyam Kashyap,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-01-2025
+283,283,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Srikanth Dommati,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-01-2025
+284,284,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Soniya N,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,4/30/2025
+285,285,78,3,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,05-05-2025,100,100,Allocated,Usha Gali,,Yogi B,8/13/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,25,05-01-2025
+286,286,31,15,Sr. Application Engineer,Sr. AE,Offshore,05-01-2025,05-01-2025,06-01-2025,100,100,Allocated,Anjaneya Reddy,Required by 1st May,Yogi B,6/26/2025 0:00,Yogi B,06-03-2025 00:04,25-May,35.2,4/30/2025
+287,287,31,15,Sr. Application Engineer,Sr. AE,Offshore,,04-01-2025,06-01-2025,100,100,Abandoned,,"Resource name is needed for interview , Onboarding , BG Check. Required by 1st May
+
+On Hold till further confirmation from client.
+
+",Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,35.2,
+288,288,79,32,Engagement Manager,EM,Onshore,09-01-2025,09-01-2025,5/15/2025,100,100,Allocated,Kalyan,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Sep,170,07-01-2025
+289,289,79,32,Solution Architect,SA,Onshore,07-07-2025,07-07-2025,5/15/2025,100,100,Allocated,Vaishno,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,180,07-01-2025
+290,290,79,32,Solution Architect,SA,Offshore,,04-01-2025,06-01-2025,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Apr,52.8,8/22/2025
+291,291,79,32,Scrum Master,Scrum,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Zuber,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,46.2,07-01-2025
+292,292,79,32,Scrum Master,Scrum,Offshore,8/18/2025,8/18/2025,6/16/2025,100,100,Allocated,William,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Aug,46.2,07-02-2025
+293,293,79,32,Business Analyst,BA,Onshore,07-07-2025,07-07-2025,12-05-2025,100,100,Allocated,Nikhil Sreekumar,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,140,07-01-2025
+294,294,79,32,Business Analyst,BA,Onshore,07-07-2025,07-07-2025,11/30/2025,100,100,Allocated,Elizabeth,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,140,07-01-2025
+295,295,79,32,Application Engineer,AE,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Keshav Agarwal,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,138,07-01-2025
+296,296,79,32,QA Engineer Lead,QA Lead,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Girish,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,44,07-03-2025
+297,297,79,32,UX Designer,UXD,Offshore,07-07-2025,07-07-2025,11-07-2025,100,100,Allocated,Saketh Kolluri,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,44,07-01-2025
+298,298,79,32,Application Engineering Lead,AE Lead,Offshore,7/14/2025,7/14/2025,11/30/2025,100,100,Allocated,Mayank,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Jul,50.6,07-01-2025
+299,299,79,32,Application Engineering Lead,AE Lead,Onshore,8/18/2025,8/18/2025,06-01-2025,100,100,Allocated,Lindsay,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:04,25-Aug,90,07-01-2025
+300,300,79,32,Application Engineer,AE,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Akhil Mamidi,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,07-01-2025
+301,301,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Dinesh Jajula,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,07-01-2025
+302,302,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Dinky Shah,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,07-01-2025
+303,303,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Vamsi Krishna Boya,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,07-01-2025
+304,304,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Afroz Shaik,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,7/14/2025
+305,305,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Usha Gali,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,7/14/2025
+306,306,79,32,Application Engineer,AE,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Nirmal Gondle,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,7/14/2025
+307,307,79,32,Application Engineer,AE,Offshore,,04-01-2025,06-01-2025,100,100,Abandoned,,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Apr,35.2,
+308,308,79,32,UX Engineer,UXE,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Amrithraj Nalam,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,35.2,07-01-2025
+309,309,79,32,UX Engineer,UXE,Offshore,8/18/2025,8/18/2025,11/30/2025,100,100,Allocated,Upendra 50%,,Yogi B,8/26/2025 0:00,Yogi B,06-03-2025 00:05,25-Aug,35.2,08-04-2025
+310,310,79,32,QA Engineer,QA,Offshore,7/21/2025,7/21/2025,11/30/2025,100,100,Allocated,Mubeen,Available from 1st July,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,33,07-03-2025
+311,311,79,32,QA Engineer,QA,Offshore,7/28/2025,7/28/2025,11/30/2025,100,100,Allocated,Shravani Rapaka,Available from 1st July,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,33,07-03-2025
+312,312,79,32,QA Engineer,QA,Offshore,8/18/2025,8/18/2025,11/30/2025,100,100,Allocated,Ramji,Available from 1st July,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Aug,33,08-04-2025
+313,313,79,32,QA Engineer,QA,Offshore,8/18/2025,8/18/2025,11/30/2025,100,100,Allocated,Manisha N,"Consite US Talents, available from 1st June. To be confirmed on deployment at offshore rate. Talents already working on offshore rate@Coop",Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-Aug,33,08-04-2025
+314,314,82,36,Engagement Manager,EM,Onshore,,04-01-2025,4/21/2025,100,100,Abandoned,Y,Dubai PM,Yogi B,06-03-2025 00:00,Yogi B,06-03-2025 00:05,25-Apr,90,
+316,316,55,42,QA Performance Engineer,QA Perf,Offshore,6/16/2025,06-01-2025,,100,100,Allocated,Deepak Varma,Accelarator,Yogi B,07-01-2025 00:00,Yogi B,06-03-2025 00:05,25-Jun,1,6/16/2025
+318,318,31,15,Sr. Application Engineer,Sr. AE,Offshore,,4/15/2025,,100,100,Abandoned,Imran Ahmed,"Replacement resource - Interview, Fingerprinting required, Can put resource who is getting released ",Yogi B,8/26/2025 0:00,Yogi B,06-03-2025 00:05,25-Apr,,06-02-2025
+320,320,31,15,Sr. Application Engineer,Sr. AE,Offshore,7/15/2025,7/15/2025,12/31/2025,100,100,Abandoned,,"Resource name is needed for interview , Onboarding , BG Check. Required by 1st May
+
+On Hold till further confirmation from client.",Yogi B,10/15/2025 0:00,Yogi B,06-03-2025 00:05,25-Jul,,
+321,321,36,29,Application Engineer,AE,Offshore,,5/26/2025,7/26/2025,100,100,Allocated,Keerthi AVSL,,Yogi B,8/22/2025 0:00,Yogi B,06-03-2025 00:05,25-May,50.6,5/26/2025
+325,DEM-20250604122620385,1db439f0-9f10-4485-b33d-896d6fb9e9fa,3,UX Engineer,UXE,Offshore,,06-09-2025,,100,100,Allocated,Pradeep Pansari,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-04-2025 00:05,25-Jun,0,07-01-2025
+326,DEM-20250604122620388,1db439f0-9f10-4485-b33d-896d6fb9e9fa,3,Application Engineer,AE,Offshore,,06-09-2025,,100,100,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,06-04-2025 00:05,25-Jun,0,
+327,DEM-20250604122620390,1db439f0-9f10-4485-b33d-896d6fb9e9fa,3,Application Engineer,AE,Offshore,,06-09-2025,,100,100,Abandoned,Shakeel Basha,,Yogi B,8/22/2025 0:00,Sreevalli Sista,06-04-2025 00:05,25-Jun,0,07-01-2025
+329,DEM-20250610071430019,81,36,Engagement Manager,EM,Offshore,07-01-2025,11/18/2024,,100,50,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,06-10-2025 00:05,25-Jul,0,
+330,DEM-20250623122601349,82,36,Sr. Application Engineer,Sr. AE,Offshore,07-01-2025,06-01-2025,,100,100,Abandoned,Rashi Bansal,,Yogi B,10/24/2025 0:00,Sreevalli Sista,6/23/2025 0:05,25-Jul,0,6/25/2025
+338,DEM-20250624125222390,41,32,Application Engineer,AE,Offshore,,6/30/2025,,100,100,Abandoned,,,Yogi B,08-12-2025 00:00,Sreevalli Sista,6/24/2025 0:05,25-Jun,0,
+339,DEM-20250624125325686,41,32,Application Engineer,AE,Offshore,,6/30/2025,,100,100,Abandoned,Vinoth,Python Developer,Yogi B,08-12-2025 00:00,Sreevalli Sista,6/24/2025 0:05,25-Jun,0,07-01-2025
+340,DEM-20250624125401508,41,32,QA Engineer,QA,Offshore,,6/30/2025,,100,100,Abandoned,,,Yogi B,08-12-2025 00:00,Sreevalli Sista,6/24/2025 0:05,25-Jun,0,
+341,DEM-20250626041803729,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Solution Architect,SA,Onshore,7/21/2025,7/15/2025,,50,100,Allocated,Ramesh,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Jul,0,08-04-2025
+342,DEM-20250626041845432,55,42,Sr. Application Engineer,Sr. AE,Offshore,,02-10-2025,,100,100,Allocated,Payal Kabra,Accelerate POD,Yogi B,07-01-2025 00:00,Sreevalli Sista,6/26/2025 0:05,25-Feb,0,06-02-2025
+343,DEM-20250626041853392,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineering Lead,AE Lead,Onshore,,7/15/2025,,100,100,Allocated,Praveen K,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Jul,0,6/16/2025
+344,DEM-20250626041923910,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineering Lead,AE Lead,Offshore,08-01-2025,7/15/2025,,100,100,Allocated,Ranga,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+345,DEM-20250626041938477,55,42,Application Engineer,AE,Offshore,,02-03-2025,,100,100,Allocated,Trinadh Vijay Kamma,Accelerate POD Augmentation,Yogi B,08-12-2025 00:00,Sreevalli Sista,6/26/2025 0:05,25-Feb,0,07-01-2025
+346,DEM-20250626042005497,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,08-04-2025,08-01-2025,,100,100,Allocated,Prabal Rai,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,7/14/2025
+347,DEM-20250626042005534,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Bhargavi Redy Pati,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+348,DEM-20250626042005566,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Vishnu Varma,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+349,DEM-20250626042005594,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Teja Goud Puli,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+350,DEM-20250626042135978,4da013d6-f2fb-4592-9f50-be1fea46e506,32,UX Designer,UXD,Offshore,,08-01-2025,,100,100,Abandoned,Saketh Vempaty,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,07-02-2025
+351,DEM-20250626042205087,4da013d6-f2fb-4592-9f50-be1fea46e506,32,UX Engineer,UXE,Offshore,,08-01-2025,,100,100,Allocated,Amrithraj Nalam,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,07-02-2025
+352,DEM-20250626042223086,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Sai Ram B,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+353,DEM-20250626042223133,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,Monika,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,08-04-2025
+354,DEM-20250626042304797,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Scrum Master,Scrum,Offshore,7/21/2025,7/15/2025,,50,100,Allocated,Anil V,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Jul,0,07-02-2025
+355,DEM-20250626042333868,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Business Analyst,BA,Offshore,,08-01-2025,,100,100,Allocated,Harishankar,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,07-02-2025
+356,DEM-20250626042447464,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Engagement Manager,EM,Onshore,,08-01-2025,,100,100,Allocated,Santosh,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,6/26/2025
+357,DEM-20250626042548763,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Senior Solution Architect,Sr. SA,Onshore,,08-01-2025,,100,100,Allocated,Rakesh,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,6/26/2025
+358,DEM-20250626042647215,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Onshore,,08-01-2025,,100,100,Allocated,Sayali,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,6/26/2025
+359,DEM-20250626042705245,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineering Lead,AE Lead,Onshore,,08-01-2025,,100,100,Allocated,Bharath CM,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:05,25-Aug,0,07-02-2025
+360,DEM-20250626042724087,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineering Lead,AE Lead,Onshore,,08-01-2025,,100,100,Allocated,Spurthi B,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+361,DEM-20250626042746602,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Onshore,,08-01-2025,,100,100,Allocated,Manoj Dasari,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+362,DEM-20250626042746635,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Onshore,,08-01-2025,,100,100,Allocated,Subbu Duvvi,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+363,DEM-20250626042821632,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Scrum Master,Scrum,Offshore,,08-01-2025,,100,100,Allocated,Amita P,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+364,DEM-20250626042837778,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,Deepa Rajesh,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+365,DEM-20250626042838212,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,Latika Pathak,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+366,DEM-20250626042922352,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineering Lead,AE Lead,Offshore,,08-01-2025,,100,100,Allocated,Subbu G,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+367,DEM-20250626042922403,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineering Lead,AE Lead,Offshore,,08-01-2025,,100,100,Allocated,Shashank Devarashetty,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+368,DEM-20250626042955242,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,Aravinth S,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+369,DEM-20250626042955283,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,Priyanka Rajkumar Kasat,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+370,DEM-20250626042955338,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer Lead,QA Lead,Offshore,,08-01-2025,,100,100,Allocated,,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+371,DEM-20250626043009900,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Shravani Rapaka,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+372,DEM-20250626043033719,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Jitendra Subudhi,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+373,DEM-20250626043101858,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,UX Engineer,UXE,Offshore,,08-01-2025,,100,100,Allocated,Keshav Agarwal,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+374,DEM-20250626043121574,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Khsif Raza,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+375,DEM-20250626043121630,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Vamshi Krishna Boya,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+376,DEM-20250626043121679,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Keshav Agarwal,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+377,DEM-20250626043121728,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Shashank Devarashetty,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+378,DEM-20250626043121782,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Shyam Surpatne,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+379,DEM-20250626043121834,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Dinesh Jajula,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+380,DEM-20250626043122342,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Teja Goud Puli,,Yogi B,8/22/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Aug,0,07-02-2025
+381,DEM-20250626045153775,55,42,Application Engineering Lead,AE Lead,Offshore,,07-02-2025,,100,100,Abandoned,,Subhub,Yogi B,10/15/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Jul,0,
+382,DEM-20250626045228689,55,42,Sr. Application Engineer,Sr. AE,Offshore,,07-02-2025,,100,100,Abandoned,,Subhub,Yogi B,10/15/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Jul,0,
+383,DEM-20250626045228714,55,42,Sr. Application Engineer,Sr. AE,Offshore,,07-02-2025,,100,100,Abandoned,,Subhub,Yogi B,10/15/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Jul,0,
+384,DEM-20250626045251626,55,42,Application Engineer,AE,Offshore,,07-07-2025,,100,100,Abandoned,,Subhub,Yogi B,10/15/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Jul,0,
+385,DEM-20250626045319465,55,42,QA Engineer,QA,Offshore,,07-02-2025,,100,100,Abandoned,,Subhub,Yogi B,10/15/2025 0:00,Sreevalli Sista,6/26/2025 0:06,25-Jul,0,
+394,DEM-20250701111715687,79,32,Engagement Manager,EM,Onshore,07-07-2025,07-07-2025,8/29/2025,100,100,Allocated,Kalyan,,Yogi B,8/22/2025 0:00,Sreevalli Sista,07-01-2025 00:06,25-Jul,170,07-01-2025
+395,DEM-20250701112856006,56,36,Application Engineer,AE,Offshore,,07-01-2025,,100,100,Abandoned,,Replacement for Avinash,Yogi B,8/22/2025 0:00,Sreevalli Sista,07-01-2025 00:06,25-Jul,0,
+401,DEM-20250704080503008,1db439f0-9f10-4485-b33d-896d6fb9e9fa,3,UX Engineer,UXE,Offshore,,01-01-2025,,100,100,Allocated,Pradeep Pansari,,Yogi B,8/22/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jan,0,6/23/2025
+402,DEM-20250704081351047,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,Application Engineer,AE,Offshore,,07-01-2025,12/31/2025,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jul,0,
+403,DEM-20250704081351111,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,Application Engineer,AE,Offshore,,07-01-2025,12/31/2025,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jul,0,
+404,DEM-20250704081546756,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,Application Engineer,AE,Onshore,,08-01-2025,,100,90,Abandoned,,Devops Engineer,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Aug,0,
+405,DEM-20250704081618958,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,Application Engineer,AE,Offshore,,08-01-2025,12/31/2025,100,90,Abandoned,,Devops Engineer,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Aug,0,
+406,DEM-20250704081657585,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,UX Engineer,UXE,Offshore,,07-01-2025,12/31/2025,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jul,0,
+407,DEM-20250704081657643,083550b2-76ab-45d8-9aaa-3d35223aecf9,7,UX Engineer,UXE,Offshore,,07-01-2025,12/31/2025,100,90,Abandoned,,,Yogi B,10/15/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jul,0,
+408,DEM-20250704081805935,74,36,Business Analyst,BA,Onshore,11-03-2025,7/15/2025,,100,90,On Hold,,Product Owner,Yogi B,10/24/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Nov,0,
+410,DEM-20250704081944885,74,36,Application Engineer,AE,Onshore,11-01-2025,7/15/2025,,100,90,On Hold,,Digital Analyst,Yogi B,10/24/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Nov,0,
+411,DEM-20250704082027302,5f5d6324-ef87-447e-bbec-654721cde94a,36,Application Engineer,AE,Offshore,11-03-2025,10/27/2025,,100,90,Mapped-Interview Pending,Madhurika B,Product Engineer,Yogi B,10/28/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Nov,0,10/15/2025
+413,DEM-20250704082433634,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Engagement Manager,EM,Onshore,,7/15/2025,,25,100,Allocated,Kalyan,,Yogi B,8/22/2025 0:00,Sreevalli Sista,07-04-2025 00:06,25-Jul,0,08-04-2025
+415,DEM-20250724064957620,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Engagement Manager,EM,Onshore,,7/21/2025,10/24/2025,50,100,Allocated,Auchal Azad,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:06,25-Jul,0,08-04-2025
+416,DEM-20250724065044461,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Solution Architect,SA,Offshore,,7/21/2025,11-07-2025,50,100,Allocated,Param,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:06,25-Jul,0,7/21/2025
+417,DEM-20250724065136352,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineering Lead,AE Lead,Onshore,,7/21/2025,11-07-2025,100,100,Allocated,Daniyal,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:06,25-Jul,0,7/21/2025
+418,DEM-20250724065136403,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineering Lead,AE Lead,Onshore,,7/21/2025,11-07-2025,100,100,Allocated,Paul Athmer,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:06,25-Jul,0,7/21/2025
+419,DEM-20250724065315431,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Scrum Master,Scrum,Offshore,,7/21/2025,10/24/2025,100,100,Allocated,Auchal,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:06,25-Jul,0,08-04-2025
+420,DEM-20250724065411535,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,,7/21/2025,11-07-2025,100,100,Allocated,AVSL Keerthi,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:07,25-Jul,0,7/21/2025
+421,DEM-20250724065411581,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,,7/21/2025,11-07-2025,100,100,Allocated,Sowjanya Kankira,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:07,25-Jul,0,7/21/2025
+422,DEM-20250724065532421,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,UX Engineer,UXE,Onshore,,7/21/2025,10-10-2025,100,100,Allocated,Benjamin,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:07,25-Jul,0,7/21/2025
+423,DEM-20250724065644782,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,UX Engineer,UXE,Offshore,,7/21/2025,,100,100,Allocated,Benjamin,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:07,25-Jul,0,08-04-2025
+424,DEM-20250724070307471,79,32,UX Designer,UXD,Onshore,,7/23/2025,,25,100,Allocated,Mian Fraz,,Yogi B,8/22/2025 0:00,Sreevalli Sista,7/24/2025 0:07,25-Jul,110,7/14/2025
+425,DEM-20250729091534339,4584c48e-a207-4a5d-bb74-f6950b6f99e1,7,UX Engineer,UXE,Offshore,,08-01-2025,,50,100,Allocated,Sambasiva rao,New Demand,Yogi B,8/26/2025 0:00,Sreevalli Sista,7/29/2025 0:07,25-Aug,0,08-04-2025
+426,DEM-20250808073115845,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Engagement Manager,EM,Onshore,,7/21/2025,10/24/2025,50,100,Allocated,Sumana,,Yogi B,8/22/2025 0:00,Sreevalli Sista,08-08-2025 00:07,25-Jul,0,08-04-2025
+427,DEM-20250812104211343,74,36,Engagement Manager,EM,Onshore,11-03-2025,11-03-2025,,100,90,Open,,Digital Delivery Manager,Yogi B,10/29/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,
+428,DEM-20250812105311336,47ceb440-84cd-489e-80fc-a68b7d676650,39,Scrum Master,Scrum,Offshore,,09-01-2025,12/31/2025,100,90,Allocated,Arun K,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+429,DEM-20250812105356968,47ceb440-84cd-489e-80fc-a68b7d676650,39,Solution Architect,SA,Onshore,,09-01-2025,,100,90,Allocated,Akki 50% & Amy 50%,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+431,DEM-20250812105443606,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,,09-01-2025,,100,90,Allocated,Rishi Sai Basava,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+432,DEM-20250812105443609,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,,09-01-2025,,100,90,Allocated,Malavika Mahadevu,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+433,DEM-20250812105443612,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,,09-01-2025,,100,90,Allocated,Rashi Bansal,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+434,DEM-20250812105443622,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,12-01-2025,09-01-2025,,100,90,Open,,,Yogi B,10/24/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Dec,0,8/13/2025
+435,DEM-20250812105443625,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,,09-01-2025,,100,90,Allocated,Vinay Kaspa,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+436,DEM-20250812105443636,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineer,AE,Offshore,,09-01-2025,,100,90,Allocated,Trinadh Vijay Kamma,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+437,DEM-20250812105501269,47ceb440-84cd-489e-80fc-a68b7d676650,39,Business Analyst,BA,Onshore,,09-01-2025,,100,90,Allocated,Divyasree N,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+438,DEM-20250812105514626,47ceb440-84cd-489e-80fc-a68b7d676650,39,QA Engineer,QA,Offshore,,09-01-2025,,100,90,Allocated,Pradeep Patil,,Yogi B,10/28/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,10-01-2025
+439,DEM-20250812105532341,47ceb440-84cd-489e-80fc-a68b7d676650,39,QA Engineer,QA,Offshore,,09-01-2025,,100,90,Allocated,Sai Sharanya,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+440,DEM-20250812105551602,47ceb440-84cd-489e-80fc-a68b7d676650,39,UX Designer,UXD,Offshore,,09-01-2025,,100,90,Allocated,Fraz 25% & Saketh Vempaty,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+441,DEM-20250812105602142,47ceb440-84cd-489e-80fc-a68b7d676650,39,UX Engineer,UXE,Offshore,,09-01-2025,,100,90,Allocated,Ina Q,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Sep,0,8/13/2025
+442,DEM-20250812110023489,74,36,Application Engineer,AE,Offshore,11-01-2025,7/15/2025,,100,90,Mapped-Interview Pending,Saidebaji,Integration Engineer,Yogi B,10/28/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,10/21/2025
+443,DEM-20250812110202200,74,36,Application Engineer,AE,Onshore,11-03-2025,7/15/2025,,100,90,On Hold,,Data Engineer,Yogi B,10/24/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,
+444,DEM-20250812111924455,74,36,Application Engineer,AE,Onshore,11-01-2025,7/15/2025,,100,90,On Hold,,Audit & Asset Engineer,Yogi B,10/24/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,
+445,DEM-20250812112025393,74,36,QA Engineer,QA,Onshore,11-03-2025,09-01-2025,,100,90,On Hold,Harsha,Quality and Support Engineer,Yogi B,10/24/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,10/15/2025
+446,DEM-20250812112138198,74,36,QA Engineer,QA,Offshore,11-01-2025,09-01-2025,,100,90,Mapped-Interview Pending,Naga Venkat S,Quality and Support Engineer,Yogi B,10/28/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,10/21/2025
+447,DEM-20250812112259316,74,36,Solution Architect,SA,Offshore,11-01-2025,09-01-2025,,100,90,Mapped-Interview Pending,,Application Architect,Yogi B,10/28/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,
+448,DEM-20250812112313344,74,36,Functional SME,Sr. BA,Offshore,11-01-2025,09-01-2025,,100,90,Mapped-Interview Pending,,Application Security & Audit,Yogi B,10/28/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Nov,0,
+449,DEM-20250812113754412,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Afroz ,,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Aug,0,08-04-2025
+450,DEM-20250812113757481,4da013d6-f2fb-4592-9f50-be1fea46e506,32,Application Engineer,AE,Offshore,,08-01-2025,,100,100,Allocated,Haritha P,,Yogi B,8/22/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Aug,0,08-04-2025
+451,DEM-20250812154252432,27,23,Application Engineering Lead,AE Lead,Offshore,8/18/2025,8/18/2025,,100,100,Allocated,Imran Ahmed,Replacement for Mahesh,Yogi B,10/15/2025 0:00,Sreevalli Sista,08-12-2025 00:07,25-Aug,45,08-11-2025
+452,DEM-20250813121529057,47ceb440-84cd-489e-80fc-a68b7d676650,39,Application Engineering Lead,AE Lead,Offshore,,09-01-2025,,100,90,Allocated,Shashank 50%,,Yogi B,8/22/2025 0:00,Sreevalli Sista,8/13/2025 0:07,25-Sep,0,8/13/2025
+453,DEM-20250813124146558,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Ritu Agarwal,,Yogi B,8/22/2025 0:00,Sreevalli Sista,8/13/2025 0:07,25-Aug,0,08-04-2025
+454,DEM-20250813124151226,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Neha J,,Yogi B,8/22/2025 0:00,Sreevalli Sista,8/13/2025 0:07,25-Aug,0,08-04-2025
+455,DEM-20250813124212680,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Rajendra Sahoo,,Yogi B,8/22/2025 0:00,Sreevalli Sista,8/13/2025 0:07,25-Aug,0,08-04-2025
+456,DEM-20250813124222223,4da013d6-f2fb-4592-9f50-be1fea46e506,32,QA Engineer,QA,Offshore,,08-01-2025,,100,100,Allocated,Amit Kumar Raju,,Yogi B,8/22/2025 0:00,Sreevalli Sista,8/13/2025 0:07,25-Aug,0,08-04-2025
+457,DEM-20250819100523854,54,41,Application Engineer,AE,Offshore,,09-01-2025,,100,100,Mapped-Interview Pending,Rohit Reddy,AI ML engineer,Yogi B,10/28/2025 0:00,Sreevalli Sista,8/19/2025 0:07,25-Sep,0,10/21/2025
+459,DEM-20250826064841435,1db439f0-9f10-4485-b33d-896d6fb9e9fa,3,Application Engineer,AE,Offshore,,09-01-2025,,100,100,Allocated,Vamshi Krishna Boya,,Yogi B,10/15/2025 0:00,Sreevalli Sista,8/26/2025 0:07,25-Sep,0,8/26/2025
+460,DEM-20251009052844889,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,QA Engineer Lead,QA Lead,Offshore,,10/15/2025,12/31/2025,100,90,Mapped,Aravinth S & Aashish,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,25-Oct,38,10-09-2025
+461,DEM-20251009053039398,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,QA Engineer,QA,Offshore,,10/15/2025,12/31/2026,100,90,Mapped,Sravanthi Pasike/Nikhil Thota,,Yogi B,10/15/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,30,10/15/2025
+462,DEM-20251009053231082,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,Business Analyst,BA,Onshore,,10/15/2025,12/31/2026,100,90,Mapped-Interview Pending,Onshore Hiring,Senior Business Analyst,Yogi B,10/24/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,125,10/21/2025
+463,DEM-20251009053344101,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,Business Analyst,BA,Offshore,,10/15/2025,12/31/2026,100,90,Mapped,Raghav B,Junior Business Analyst,Yogi B,10/15/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,35,10/15/2025
+464,DEM-20251009053512718,ce146641-ce84-4197-bcb3-db382418a8ab,7,UX Engineer,UXE,Offshore,,01-01-2026,12/31/2026,100,90,Open,,EEP BAU and 2026 Strategic Initiatives,Yogi B,10/16/2025 0:00,Yogi B,10-09-2025 00:07,26-Jan,60,
+465,DEM-20251009053620219,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,Application Engineer,AE,Offshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,40,
+466,DEM-20251009053620394,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,Application Engineer,AE,Offshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,40,
+467,DEM-20251009053721064,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,QA Engineer Lead,QA Lead,Onshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,125,
+468,DEM-20251009053756975,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,QA Engineer,QA,Offshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,30,
+469,DEM-20251009053757750,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,QA Engineer,QA,Offshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,30,
+470,DEM-20251009053909251,1a14efc7-8a62-43b3-b8fc-684d24bfe49d,7,UX Engineer,UXE,Offshore,,01-01-2026,12/31/2026,100,90,Open,,,Yogi B,10-09-2025 00:00,Yogi B,10-09-2025 00:07,26-Jan,60,
+471,DEM-20251009080854634,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineering Lead,AE Lead,Offshore,10/22/2025,10/13/2025,12/31/2025,100,100,Mapped-Interview Pending,Pranav Kotesh,,Yogi B,10/24/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,0,10/15/2025
+472,DEM-20251009080913849,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,10/22/2025,10/13/2025,,100,100,Mapped-Interview Pending,Bhavani Juttuga,,Yogi B,10/24/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,0,10/15/2025
+473,DEM-20251009080914072,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,10/22/2025,10/13/2025,,100,100,Mapped-Interview Pending,Sushma V,,Yogi B,10/24/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,0,10/15/2025
+474,DEM-20251009080914104,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,10/22/2025,10/13/2025,,100,100,Mapped-Interview Pending,Ramya Yerrsani,,Yogi B,10/24/2025 0:00,Yogi B,10-09-2025 00:07,25-Oct,0,10/15/2025
+477,DEM-20251010132707877,fe276453-223c-4c46-b57d-94da20dd968c,39,Scrum Master,Scrum,Offshore,,11-01-2025,,100,90,Mapped,Pallavi Palakurthi,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:07,25-Nov,0,10/21/2025
+478,DEM-20251010132729668,fe276453-223c-4c46-b57d-94da20dd968c,39,Solution Architect,SA,Offshore,,11-01-2025,,100,90,Mapped,Saswat,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:07,25-Nov,0,10/20/2025
+479,DEM-20251010132745876,fe276453-223c-4c46-b57d-94da20dd968c,39,Solution Architect,SA,Onshore,,11-01-2025,,100,90,Mapped,John Lordo,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:07,25-Nov,0,10/21/2025
+480,DEM-20251010132853836,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineering Lead,AE Lead,Offshore,,11-01-2025,,100,90,Mapped,Rajesh Ajay Jain,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+481,DEM-20251010132902641,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineering Lead,AE Lead,Onshore,,11-01-2025,,100,90,Mapped,Payal Kabra,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/28/2025
+482,DEM-20251010132922827,fe276453-223c-4c46-b57d-94da20dd968c,39,UX Designer,UXD,Offshore,,11-01-2025,,100,90,Mapped,Sagar,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/20/2025
+483,DEM-20251010132947989,fe276453-223c-4c46-b57d-94da20dd968c,39,UX Engineer,UXE,Offshore,,11-01-2025,,100,90,Mapped,Roshan,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+484,DEM-20251010133029562,fe276453-223c-4c46-b57d-94da20dd968c,39,Sr. Application Engineer,Sr. AE,Offshore,,11-01-2025,,100,90,Mapped,Sitesh Tandan,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/28/2025
+485,DEM-20251010133029616,fe276453-223c-4c46-b57d-94da20dd968c,39,Sr. Application Engineer,Sr. AE,Offshore,,11-01-2025,,100,90,Mapped,Parameshwar Sahu,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+486,DEM-20251010133029677,fe276453-223c-4c46-b57d-94da20dd968c,39,Sr. Application Engineer,Sr. AE,Offshore,,11-01-2025,,100,90,Mapped,Yaswanth S,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+487,DEM-20251010133051024,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Sai Mohan Sattari,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+488,DEM-20251010133051094,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Jugal Kishore,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+489,DEM-20251010133051138,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Trinath Kamma,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+490,DEM-20251010133051139,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Gowtham K,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+491,DEM-20251010133051149,fe276453-223c-4c46-b57d-94da20dd968c,39,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Sarthak Kumar Das,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+492,DEM-20251010133119928,fe276453-223c-4c46-b57d-94da20dd968c,39,Automation Engineer,Sr. QA,Offshore,,11-01-2025,,100,90,Mapped,Priyanka Mohanty,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+493,DEM-20251010133120012,fe276453-223c-4c46-b57d-94da20dd968c,39,Automation Engineer,Sr. QA,Offshore,,11-01-2025,,100,90,Mapped,Krupakar N D,,Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+494,DEM-20251010133138056,fe276453-223c-4c46-b57d-94da20dd968c,39,QA Engineer,QA,Offshore,,11-01-2025,,100,90,Mapped,SVM Narayan Reddy,"SVM Narayana - New Joinee - Nov 3rd
+",Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+495,DEM-20251010133138066,fe276453-223c-4c46-b57d-94da20dd968c,39,QA Engineer,QA,Offshore,,11-01-2025,,100,90,Mapped,Nandhini GP,"Durga Prasad - New Joinee - Nov 3rd
+",Yogi B,10/28/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+496,DEM-20251010133138151,fe276453-223c-4c46-b57d-94da20dd968c,39,QA Engineer,QA,Offshore,,11-01-2025,,100,90,On Hold,,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,
+497,DEM-20251010133138161,fe276453-223c-4c46-b57d-94da20dd968c,39,QA Engineer,QA,Offshore,,11-01-2025,,100,90,Mapped,Akshay Masram,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,10/21/2025
+498,DEM-20251010133138200,fe276453-223c-4c46-b57d-94da20dd968c,39,QA Engineer,QA,Offshore,,11-01-2025,,100,90,On Hold,,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10-10-2025 00:08,25-Nov,0,
+499,DEM-20251015093924609,afcd9abc-739f-4e3d-9b0f-e900cbc33a90,29,Application Engineer,AE,Offshore,10/27/2025,7/21/2025,,100,100,Mapped-Interview Pending,Vinoth Kumar D,,Yogi B,10/24/2025 0:00,Sreevalli Sista,10/15/2025 0:08,25-Oct,0,10/15/2025
+500,DEM-20251015094000192,fe276453-223c-4c46-b57d-94da20dd968c,39,Business Analyst,BA,Offshore,,11-10-2025,11-01-2025,100,90,Mapped,Saanvi,,Yogi B,10/29/2025 0:00,Sreevalli Sista,10/15/2025 0:08,25-Nov,0,10/21/2025
+501,501,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Engagement Manager,EM,Onshore,,09-08-2025,,50,100,Allocated,Santosh B,,Yogi B,10/21/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10/21/2025
+502,502,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Engagement Manager,EM,Offshore,,10/27/2025,,100,100,Allocated,Jaslin,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,0,10/21/2025
+503,503,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Engagement Partner,EP,Onshore,,09-08-2025,,25,100,Allocated,Kalyan,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10-01-2025
+504,504,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Engagement Partner,EP,Offshore,,09-08-2025,,25,100,Allocated,Vishal,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10-01-2025
+505,505,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Solution Architect,SA,Onshore,,10/27/2025,,50,100,Allocated,Nikhil W,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10-01-2025
+506,506,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Solution Architect,SA,Onshore,,09-08-2025,,50,100,Allocated,Saugato,,Yogi B,10/21/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10-01-2025
+507,507,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,UXD,UXD,Offshore,,09-08-2025,,50,100,Allocated,Latha,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10-01-2025
+508,508,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,UXE,UXE,Offshore,,10/27/2025,,50,100,Allocated,Upendra,,Yogi B,10/21/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10-07-2025
+509,509,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Business Architect,BA,Onshore,,09-08-2025,,100,100,Allocated,Divyashree N,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Sep,,10-01-2025
+510,510,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE Lead,AE Lead,Offshore,,10/27/2025,,100,100,Allocated,Mahesh J,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10-01-2025
+511,511,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Scrum Master,PM,Offshore,,10/27/2025,,100,100,Allocated,Kasturi,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10-01-2025
+512,512,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,Business Analyst,BA,Offshore,,10/27/2025,,100,100,Allocated,Jahanvi,,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10-01-2025
+513,513,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE Lead,AE Lead,Offshore,,10/27/2025,,100,100,Mapped-Yet to Join,Niraj Rasal,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+514,514,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE,AE,Offshore,,10/27/2025,,100,100,Open,To Be Identified,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,
+515,515,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE,AE,Offshore,,10/27/2025,,100,100,Mapped,To Be Identified,Rotated within Allianz account,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/21/2025
+516,516,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE,AE,Offshore,,10/27/2025,,100,100,Mapped,Nirmal G,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+517,517,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE,AE,Offshore,,10/27/2025,,100,100,Mapped,To Be Identified,Rotated within Allianz account,Yogi B,10/24/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/21/2025
+518,518,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,AE,AE,Offshore,,10/27/2025,,100,100,Mapped-Yet to Join,Ganesh Gaurav,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+519,519,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,QA Lead,QA Lead,Offshore,,10/27/2025,,100,100,Mapped,Ruth --> To Be identied,,Yogi B,10/21/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/13/2025
+520,520,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,QA,QA,Offshore,,10/27/2025,,100,100,Mapped,Akshay Prakash Masram,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+521,521,be4ac3b3-2a4a-4b7c-9ecb-5e2c036f33e8,32,QA,QA,Offshore,,10/27/2025,,100,100,Mapped,Sairam Bandaru,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+522,522,af2dfeab-3445-460c-8b75-f8501bd0faea,3,AE,AE,Onshore,,10/27/2025,,100,90,Mapped,Rajesh,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+523,523,af2dfeab-3445-460c-8b75-f8501bd0faea,3,AE,AE,Onshore,,10/27/2025,,100,90,Mapped-Yet to Join,Subcon,,Yogi B,10/28/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/28/2025
+524,524,af2dfeab-3445-460c-8b75-f8501bd0faea,3,AE,AE,Offshore,,10/27/2025,,100,90,Mapped,Vijay,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+525,525,af2dfeab-3445-460c-8b75-f8501bd0faea,3,AE,AE,Offshore,,10/27/2025,,100,90,Mapped,Anil,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+526,526,af2dfeab-3445-460c-8b75-f8501bd0faea,3,AE,AE,Offshore,,10/27/2025,,100,90,Mapped,Mouneesh,,Yogi B,10/15/2025 0:00,Yogi B,10/15/2025 0:08,25-Oct,,10/15/2025
+527,DEM-20251022095312023,d5d922b0-52a2-4c50-a104-ead4dfe70a8b,17,Solution Architect,SA,Offshore,,10/27/2025,,100,90,Mapped,Lalitha Sastry,,Yogi B,10/22/2025 0:00,Yogi B,10/22/2025 0:08,25-Oct,0,10/21/2025
+529,DEM-20251024030338165,5f5d6324-ef87-447e-bbec-654721cde94a,36,Sr. Application Engineer,Sr. AE,Offshore,,11-03-2025,,100,90,Mapped-Interview Pending,Rashi Bansal,Product Engineer,Yogi B,10/24/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+530,DEM-20251024030422847,5f5d6324-ef87-447e-bbec-654721cde94a,36,Sr. Application Engineer,Sr. AE,Offshore,11-01-2025,10/27/2025,,100,90,Mapped-Interview Pending,Vasim Tamboli,Product ENgineer,Yogi B,10/28/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+531,DEM-20251024030603659,d5d922b0-52a2-4c50-a104-ead4dfe70a8b,17,Sr. Application Engineer,Sr. AE,Offshore,,11-03-2025,,100,90,Mapped,Manogna,,Yogi B,10/24/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+532,DEM-20251024030812198,2beac95a-cebc-4b52-b79f-f23375d0e57d,14,Solution Architect,SA,Onshore,,11-01-2025,,100,90,Mapped,Yogi Patil,,Yogi B,10/24/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+533,DEM-20251024030840925,2beac95a-cebc-4b52-b79f-f23375d0e57d,14,Application Engineering Lead,AE Lead,Onshore,,11-01-2025,,100,90,Mapped,Samir Patel,,Yogi B,10/24/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+534,DEM-20251024030903029,2beac95a-cebc-4b52-b79f-f23375d0e57d,14,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Pavan Sammeta,,Yogi B,10/24/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/21/2025
+535,DEM-20251024030903285,2beac95a-cebc-4b52-b79f-f23375d0e57d,14,Application Engineer,AE,Offshore,,11-01-2025,,100,90,Mapped,Bhavani J,,Yogi B,10/28/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/28/2025
+536,DEM-20251024030922306,2beac95a-cebc-4b52-b79f-f23375d0e57d,14,UX Engineer,UXE,Offshore,,11-01-2025,,100,90,Mapped,Sameendra,,Yogi B,10/28/2025 0:00,Yogi B,10/24/2025 0:08,25-Nov,0,10/28/2025
+537,DEM-20251029083559401,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Scrum Master,Scrum,Offshore,,9/22/2025,,100,100,Allocated,Pavani Y,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:08,25-Sep,0,9/29/2025
+538,DEM-20251029083630836,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Application Engineering Lead,AE Lead,Offshore,,9/22/2025,,100,100,Allocated,Lavanya K,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:08,25-Sep,0,9/22/2025
+539,DEM-20251029083718864,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Sr. Application Engineer,Sr. AE,Offshore,,9/22/2025,,100,100,Allocated,Praveen,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:08,25-Sep,0,10/20/2025
+540,DEM-20251029083718913,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Sr. Application Engineer,Sr. AE,Offshore,,9/22/2025,,100,100,Allocated,Chakri,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:09,25-Sep,0,9/22/2025
+541,DEM-20251029083719232,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Sr. Application Engineer,Sr. AE,Offshore,,9/22/2025,,100,100,Allocated,Abhijit,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:09,25-Sep,0,9/22/2025
+542,DEM-20251029083719323,32792df7-d46f-4349-8344-70183ba3ec7d,ACC-20251029083018,Sr. Application Engineer,Sr. AE,Offshore,,9/22/2025,,100,100,Allocated,Sailesh,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:09,25-Sep,0,9/22/2025
+543,DEM-20251029084122844,dea1977f-27c2-4842-ab49-34fab7fe2991,ACC-20251029082938,Scrum Master,Scrum,Offshore,,11-03-2025,,99,100,Mapped,Pavani Y,,Yogi B,10/29/2025 0:00,Yogi B,10/29/2025 0:09,25-Nov,0,10/13/2025
