@@ -13,6 +13,7 @@ import '../styles.css';
 
 export default function Dashboard() {
   const [employees, setEmployees] = useState([]);
+  const [demands,setDemands] = useState([]);
   const [filteredEmployees, setFilteredEmployees] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searching, setSearching] = useState(false);
@@ -24,204 +25,283 @@ export default function Dashboard() {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [selectedTeamName, setSelectedTeamName] = useState(null);
   const [selectedDemand, setSelectedDemand] = useState(null);
+  const [demandsLoading, setDemandsLoading] = useState(false);
+  const [demandsError, setDemandsError] = useState(null);
 
-  /** 🔥 Excel Upload Modal States */
+  const [searchCollapsed, setSearchCollapsed] = useState(false);
+
+  // Collapsible Sidebar
+  const [collapsed, setCollapsed] = useState(false);
+
+  // Upload modal
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [excelFile, setExcelFile] = useState(null);
+  const [availableTables, setAvailableTables] = useState([]);
   const [selectedTable, setSelectedTable] = useState("");
   const [newTableName, setNewTableName] = useState("");
 
-  /** NEW — dynamic tables */
-  const [availableTables, setAvailableTables] = useState([]);
-
-  /** Fetch tables whenever modal opens */
+  /** Fetch tables when modal opens */
   useEffect(() => {
     if (showUploadModal) {
       fetch("http://localhost:8000/tables")
         .then(res => res.json())
-        .then(data => setAvailableTables(data.tables || []))
-        .catch(err => console.error("Failed to load tables", err));
+        .then(data => setAvailableTables(data.tables || []));
     }
   }, [showUploadModal]);
 
-  /** Excel Upload Handler */
-  const handleExcelUpload = async () => {
-    if (!excelFile) return alert("Please upload an Excel file");
-    const tableName = selectedTable || newTableName;
-    if (!tableName) return alert("Select or enter a table name");
-
-    const formData = new FormData();
-    formData.append("file", excelFile);
-    formData.append("tableName", tableName);
-
-    try {
-      const response = await fetch("http://localhost:8000/upload-excel", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-      alert(data.message || "Uploaded successfully!");
-
-      setShowUploadModal(false);
-      setExcelFile(null);
-      setSelectedTable("");
-      setNewTableName("");
-    } catch (err) {
-      console.error(err);
-      alert("Upload failed");
-    }
-  };
-
-  /** Fetch employees on mount */
+  /** Fetch employees */
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        setLoading(true);
-        const response = await fetch('http://localhost:8000/employees');
-        if (!response.ok) throw new Error('Failed to fetch employees');
-
-        const data = await response.json();
-        setEmployees(data);
-        setFilteredEmployees(data);
-        setError(null);
-      } catch (err) {
-        setError(err.message);
-        console.error('Error fetching employees:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
+          setLoading(true);
+          const response = await fetch('http://localhost:8000/employees');
+          const data = await response.json();
+          setEmployees(data);
+          setFilteredEmployees(data);
+        } catch (err) {
+          setError(err.message);
+        } finally {
+          setLoading(false);
+        }
+      };
     fetchEmployees();
   }, []);
 
-  /** AI Search Handler */
+
+  useEffect(() => {
+  const fetchDemands = async () => {
+    try {
+      setDemandsLoading(true);
+      setDemandsError(null);
+
+      const res = await fetch("http://localhost:8000/demands");
+      if (!res.ok) throw new Error("Failed to fetch demands");
+
+      const data = await res.json();
+
+      // always set `demands` state
+      setDemands(Array.isArray(data) ? data : []);
+    } catch (err) {
+      console.error("Error loading demands:", err);
+      setDemandsError(err.message);
+      setDemands([]);
+    } finally {
+      setDemandsLoading(false);
+    }
+  };
+
+  fetchDemands();
+}, []);
+
+
+
+
+  /** AI Search */
   const handleAISearch = async (taskDescription, useSql = false, target = 'employees') => {
     if (!taskDescription.trim()) {
       setFilteredEmployees(employees);
       setSearchPerformed(false);
       setLastQuery('');
       setDemandResults(null);
+      setSearchCollapsed(false);
       return;
     }
 
     try {
-      setSearching(true);
-      setSearchPerformed(true);
-      setLastQuery(taskDescription);
-      setError(null);
-      setActiveTab('search');
+        setSearching(true);
+        setSearchPerformed(true);
+        setLastQuery(taskDescription);
+        setActiveTab('search');
 
-      const params = new URLSearchParams();
-      params.append('task_description', taskDescription);
+        const params = new URLSearchParams();
+        params.append('task_description', taskDescription);
 
-      let endpoint = '/employees/ai-search';
-      if (useSql) {
-        endpoint = target === 'demands' ? '/demands/ai-sql-search' : '/employees/ai-sql-search';
+        let endpoint = '/employees/ai-search';
+        if (useSql) endpoint = target === 'demands' ? '/demands/ai-sql-search' : '/employees/ai-sql-search';
+
+        const response = await fetch(`http://localhost:8000${endpoint}?${params.toString()}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+        });
+
+        const results = await response.json();
+        setSearchCollapsed(true);
+
+        if (useSql && target === 'demands') {
+          setDemandResults(results);
+          setFilteredEmployees([]);
+        } else {
+          setFilteredEmployees(results);
+        }
+      } catch (err) {
+        setError(`AI Search Error: ${err.message}`);
+      } finally {
+        setSearching(false);
       }
-
-      const response = await fetch(`http://localhost:8000${endpoint}?${params.toString()}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'AI search failed');
-      }
-
-      const results = await response.json();
-      if (useSql && target === 'demands') {
-        setDemandResults(results);
-        setFilteredEmployees([]);
-      } else {
-        setFilteredEmployees(results);
-        setDemandResults(null);
-      }
-    } catch (err) {
-      setError(`AI Search Error: ${err.message}`);
-      console.error('Error during AI search:', err);
-      setFilteredEmployees([]);
-      setDemandResults(null);
-    } finally {
-      setSearching(false);
-    }
   };
 
   return (
-    <div className="dashboard-bg min-h-screen">
-      {/* Header */}
-      <header className="dashboard-header">
-        <div className="header-content">
-          <div className="flex items-center gap-3">
-            <div className="logo-badge">D</div>
-            <div className="header-title">
-              <h1>Dynamic Demand</h1>
-              <p>Employee Intelligence Platform</p>
+    <div className="dashboard-bg min-h-screen" style={{ display: "flex" }}>
+
+      {/* ====================== SIDEBAR ====================== */}
+      <div
+        style={{
+          width: collapsed ? "70px" : "240px",
+          background: "#000",
+          color: "#fff",
+          minHeight: "100vh",
+          padding: collapsed ? "1rem 0.4rem" : "1.5rem 1rem",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          display: "flex",
+          flexDirection: "column",
+          gap: "1.2rem",
+          transition: "width .3s ease, padding .3s ease"
+        }}
+      >
+        {/* Collapse Toggle */}
+        <button
+          onClick={() => setCollapsed(!collapsed)}
+          style={{
+            background: "transparent",
+            border: "none",
+            color: "#fff",
+            fontSize: "20px",
+            cursor: "pointer",
+            alignSelf: collapsed ? "center" : "flex-end",
+            marginBottom: "1rem",
+          }}
+        >
+          {collapsed ? "➡️" : "⬅️"}
+        </button>
+
+        {/* Logo */}
+        {!collapsed && (
+          <div style={{ display: "flex", alignItems: "center", gap: ".75rem" }}>
+            <div style={{
+              background: "#fff",
+              width: "40px",
+              height: "40px",
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "#000",
+              fontWeight: 700,
+              fontSize: 20
+            }}>D</div>
+            <div>
+              <h2 style={{ margin: 0, fontSize: "18px", fontWeight: 700 }}>Dynamic Demand</h2>
+              <p style={{ margin: 0, fontSize: "12px", opacity: .7 }}>Employee Intelligence</p>
             </div>
           </div>
-        </div>
-      </header>
+        )}
 
-      {/* Navigation Bar + Upload Button */}
-      <div className="tab-navigation" style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-        <button onClick={() => setActiveTab('search')} className={`tab-button ${activeTab === 'search' ? 'active' : ''}`}>AI Search</button>
-        <button onClick={() => setActiveTab('analytics')} className={`tab-button ${activeTab === 'analytics' ? 'active' : ''}`}>Analytics</button>
-        <button onClick={() => setActiveTab('projects')} className={`tab-button ${activeTab === 'projects' ? 'active' : ''}`}>Projects</button>
-        <button onClick={() => setActiveTab('hiring')} className={`tab-button ${activeTab === 'hiring' ? 'active' : ''}`}>Hiring</button>
+        {/* Buttons */}
+        <button
+          className={`tab-button ${activeTab === 'search' ? 'active' : ''}`}
+          onClick={() => setActiveTab('search')}
+        >
+          {collapsed ? "🔍" : "AI Search"}
+        </button>
+
+        <button
+          className={`tab-button ${activeTab === 'analytics' ? 'active' : ''}`}
+          onClick={() => setActiveTab('analytics')}
+        >
+          {collapsed ? "📊" : "Analytics"}
+        </button>
+
+        <button
+          className={`tab-button ${activeTab === 'hiring' ? 'active' : ''}`}
+          onClick={() => setActiveTab('hiring')}
+        >
+          {collapsed ? "🎯" : "Hiring"}
+        </button>
 
         <button
           onClick={() => setShowUploadModal(true)}
           style={{
-            marginLeft: "auto",
-            padding: "0.5rem 1rem",
-            backgroundColor: "#3b82f6",
-            color: "white",
-            borderRadius: "0.375rem",
-            border: "none",
+            marginTop: "auto",
+            padding: "0.75rem",
+            background: "#fff",
+            color: "#000",
+            borderRadius: "0.5rem",
             cursor: "pointer",
-            fontWeight: 600
+            fontWeight: 700,
+            border: "none",
           }}
         >
-          Upload Excel
+          {collapsed ? "⬆️" : "Upload Excel"}
         </button>
       </div>
 
-      {/* Main Content */}
-      <main className="main-content">
-        {activeTab === "search" && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-            <AISearchBar onSearch={handleAISearch} isLoading={searching} />
-            {!searching && demandResults && (
-              <DemandSearchResults demands={demandResults.rows || []} generatedSql={demandResults.generated_sql} onDemandClick={setSelectedDemand} />
-            )}
-          </div>
-        )}
+      {/* ====================== MAIN CONTENT ====================== */}
+      <div
+        style={{
+          marginLeft: collapsed ? "90px" : "250px",
+          // padding: "2rem",
+          width: "100%",
+          transition: "margin-left .3s ease",
+          paddingRight:"150px"
+        }}
+      >
+        <main className="main-content">
+          {activeTab === "search" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem"}}>
+              {searchCollapsed ? (
+                <div
+                  onClick={() => setSearchCollapsed(false)}
+                  style={{
+                    background: "white",
+                    padding: "0.75rem 1rem",
+                    borderRadius: "999px",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.12)",
+                    cursor: "pointer",
+                    width: "fit-content"
+                  }}
+                >
+                  🔍 {lastQuery}
+                </div>
+              ) : (
+                <AISearchBar onSearch={handleAISearch} isLoading={searching} />
+              )}
 
-        {activeTab === "analytics" && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-            <Analytics employees={employees} onEmployeeClick={setSelectedEmployee} expandedTeam={selectedTeamName} />
-            <TeamChart employees={employees} onTeamClick={setSelectedTeamName} />
-            <EmployeeTable employees={employees} onEmployeeClick={setSelectedEmployee} />
-          </div>
-        )}
+              {!searching && demandResults && (
+                <DemandSearchResults
+                  demands={demandResults.rows || []}
+                  generatedSql={demandResults.generated_sql}
+                  onDemandClick={setSelectedDemand}
+                />
+              )}
+            </div>
+          )}
 
-        {activeTab === "projects" && <ProjectsDashboard />}
-        {activeTab === "hiring" && <DemandMatching employees={employees} />}
-      </main>
+          {activeTab === "analytics" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+              <Analytics employees={employees} onEmployeeClick={setSelectedEmployee} expandedTeam={selectedTeamName} />
+              <TeamChart employees={employees} onTeamClick={setSelectedTeamName} />
+              <EmployeeTable demands={demands} onEmployeeClick={setSelectedEmployee} />
+            </div>
+          )}
 
-      {/* Employee Modal */}
+          {activeTab === "hiring" && (
+            <DemandMatching employees={employees} />
+          )}
+        </main>
+      </div>
+
+      {/* ====================== MODALS ====================== */}
       {selectedEmployee && (
         <EmployeeProfileModal employee={selectedEmployee} onClose={() => setSelectedEmployee(null)} />
       )}
 
-      {/* Demand Modal */}
       {selectedDemand && (
         <DemandDetailsModal demand={selectedDemand} onClose={() => setSelectedDemand(null)} />
       )}
 
-      {/* Excel Upload Modal */}
+      {/* Upload Excel Modal */}
       {showUploadModal && (
         <div
           style={{
@@ -299,16 +379,10 @@ export default function Dashboard() {
                 Upload
               </button>
             </div>
+
           </div>
         </div>
       )}
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <p>© 2025 Dynamic Demand. Professional Employee Intelligence.</p>
-        </div>
-      </footer>
     </div>
   );
 }

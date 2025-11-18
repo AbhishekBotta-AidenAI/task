@@ -22,9 +22,36 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
   const [barXColumn, setBarXColumn] = useState("status");
   const [barGroupColumn, setBarGroupColumn] = useState("updatedOn");
 
-  if (!demands || demands.length === 0) return null;
+  // -------------------------
+  // ZERO RESULTS HANDLING
+  // -------------------------
+  if (!demands || demands.length === 0) {
+    return (
+      <div
+        style={{
+          padding: "2rem",
+          background: "white",
+          borderRadius: "0.75rem",
+          border: "1px solid #e2e8f0",
+          textAlign: "center",
+          fontSize: "1.1rem",
+          fontWeight: 600,
+          color: "#475569"
+        }}
+      >
+        ❌ No results found  
+        <div style={{ marginTop: "0.5rem", fontSize: "0.9rem", opacity: 0.7 }}>
+          Try adjusting your search query.
+        </div>
+      </div>
+    );
+  }
 
-  // Available columns
+  // -------------------------
+  // NORMAL PATH (RESULTS FOUND)
+  // -------------------------
+
+  // Columns available for charting
   const columns = [
     "status",
     "location",
@@ -46,26 +73,23 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
     "fulfillmentdate"
   ];
 
-  // Colors for charts
+  // Colors
   const COLORS = [
     "#3b82f6", "#10b981", "#f59e0b", "#ef4444",
     "#8b5cf6", "#ec4899", "#06b6d4", "#f97316"
   ];
 
-  // Pie Chart Data
+  // PIE DATA
   const pieData = demands.reduce((acc, item) => {
     const key = item[selectedColumn] || "Unknown";
-    let existing = acc.find(e => e.name === key);
-
-    if (existing) existing.value += 1;
+    const found = acc.find(e => e.name === key);
+    if (found) found.value += 1;
     else acc.push({ name: key, value: 1 });
-
     return acc;
   }, []);
 
-  // Bar Chart Data Mapping
+  // BAR DATA
   const barDataMap = {};
-
   demands.forEach(d => {
     const xVal = d[barXColumn] || "Unknown";
     const gVal = d[barGroupColumn] || "Unknown";
@@ -84,20 +108,20 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
 
-      {/* --------- PIE + BAR CHART ROW --------- */}
+      {/* --------- CHART ROW --------- */}
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
         gap: "1.5rem"
       }}>
 
-        {/* ------------------- PIE CHART ------------------- */}
+        {/* ---------------- PIE CHART ---------------- */}
         <div className="chart-card">
           <h3 style={{ fontSize: "1rem", fontWeight: "600", marginBottom: "1rem" }}>
             {selectedColumn.toUpperCase()} Distribution
           </h3>
 
-          {/* Pie Selector */}
+          {/* PIE SELECTOR */}
           <div style={{ marginBottom: "1rem" }}>
             <label style={{ fontSize: "0.875rem", fontWeight: 600 }}>Group by:</label>
             <select
@@ -119,7 +143,6 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
             </select>
           </div>
 
-          {/* PIE CHART */}
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
               <Pie
@@ -142,8 +165,8 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
                 ))}
               </Pie>
               <Tooltip />
-              <Legend />
             </PieChart>
+            <Legend />
           </ResponsiveContainer>
 
           {selectedSlice && (
@@ -198,25 +221,20 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
           )}
         </div>
 
-        {/* ------------------- BAR CHART ------------------- */}
+        {/* ---------------- BAR CHART ---------------- */}
         <div className="chart-card">
           <h3 style={{ fontSize: "1rem", fontWeight: "600", marginBottom: "1rem" }}>
             Bar Comparison
           </h3>
 
-          {/* Bar Selectors */}
+          {/* SELECTORS */}
           <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
-            
             <div>
               <label style={{ fontSize: "0.8rem", fontWeight: 600 }}>X-Axis:</label>
               <select
                 value={barXColumn}
                 onChange={(e) => setBarXColumn(e.target.value)}
-                style={{
-                  marginLeft: "0.5rem",
-                  padding: "0.3rem",
-                  borderRadius: "0.375rem"
-                }}
+                style={{ marginLeft: "0.5rem", padding: "0.3rem", borderRadius: "0.375rem" }}
               >
                 {columns.map(col => (
                   <option key={col} value={col}>{col}</option>
@@ -229,18 +247,13 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
               <select
                 value={barGroupColumn}
                 onChange={(e) => setBarGroupColumn(e.target.value)}
-                style={{
-                  marginLeft: "0.5rem",
-                  padding: "0.3rem",
-                  borderRadius: "0.375rem"
-                }}
+                style={{ marginLeft: "0.5rem", padding: "0.3rem", borderRadius: "0.375rem" }}
               >
                 {columns.map(col => (
                   <option key={col} value={col}>{col}</option>
                 ))}
               </select>
             </div>
-
           </div>
 
           {/* BAR CHART */}
@@ -253,18 +266,13 @@ export default function DemandSearchResults({ demands, generatedSql, onDemandCli
               <Legend />
 
               {barGroups.map((grp, idx) => (
-                <Bar
-                  key={grp}
-                  dataKey={grp}
-                  fill={COLORS[idx % COLORS.length]}
-                />
+                <Bar key={grp} dataKey={grp} fill={COLORS[idx % COLORS.length]} />
               ))}
             </BarChart>
           </ResponsiveContainer>
         </div>
 
       </div>
-
     </div>
   );
 }

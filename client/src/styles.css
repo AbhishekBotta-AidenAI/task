@@ -112,19 +112,19 @@
   font-weight: 600;
   border: none;
   background-color: transparent;
-  color: #64748b;
+  color: #ffffff;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tab-button:hover {
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .tab-button.active {
-  color: #4f46e5;
-  border-bottom-color: #4f46e5;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 /* Alert Boxes */
@@ -563,7 +563,7 @@ tbody td {
 .stat-card {
   background: white;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   border: 1px solid #e2e8f0;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -592,11 +592,11 @@ tbody td {
   color: #94a3b8;
 }
 
-.stat-card-blue { border-left: 4px solid #4f46e5; }
-.stat-card-green { border-left: 4px solid #16a34a; }
-.stat-card-amber { border-left: 4px solid #d97706; }
-.stat-card-red { border-left: 4px solid #dc2626; }
-.stat-card-purple { border-left: 4px solid #7c3aed; }
+.stat-card-blue { border-left: 4px solid #000000; }
+.stat-card-green { border-left: 4px solid #000000; }
+.stat-card-amber { border-left: 4px solid rgb(0, 0, 0); }
+.stat-card-red { border-left: 4px solid #000000; }
+.stat-card-purple { border-left: 4px solid #000000; }
 
 .stat-value-blue { color: #4f46e5; }
 .stat-value-green { color: #16a34a; }
@@ -1543,3 +1543,10 @@ tbody td {
   cursor: not-allowed;
 }
 
+.searchbutton{
+    background-color: #4f46e5;
+    color: white;
+}
+.CloseButtondiv{
+  padding: 0px 10px 10px 10px;
+}

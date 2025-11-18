@@ -130,7 +130,7 @@ export default function DemandDetailsModal({ demand, onClose }) {
                 Role Code
               </label>
               <div style={{ marginTop: '0.5rem', fontSize: '1rem', fontWeight: '500', color: '#0f172a' }}>
-                {demand.roleCode || 'N/A'}
+                {demand.rolecode || 'N/A'}
               </div>
             </div>
 
@@ -139,7 +139,7 @@ export default function DemandDetailsModal({ demand, onClose }) {
                 Allocation %
               </label>
               <div style={{ marginTop: '0.5rem', fontSize: '1rem', fontWeight: '500', color: '#0f172a' }}>
-                {demand.allocationPercentage || 'N/A'}%
+                {demand.allocationpercentage || 'N/A'}%
               </div>
             </div>
 
@@ -148,7 +148,7 @@ export default function DemandDetailsModal({ demand, onClose }) {
                 Start Date
               </label>
               <div style={{ marginTop: '0.5rem', fontSize: '1rem', fontWeight: '500', color: '#0f172a' }}>
-                {formatDate(demand.originalStartDate)}
+                {formatDate(demand.originalstartdate)}
               </div>
             </div>
 
@@ -157,7 +157,7 @@ export default function DemandDetailsModal({ demand, onClose }) {
                 End Date
               </label>
               <div style={{ marginTop: '0.5rem', fontSize: '1rem', fontWeight: '500', color: '#0f172a' }}>
-                {formatDate(demand.allocationEndDate)}
+                {formatDate(demand.allocationenddate)}
               </div>
             </div>
 
@@ -175,7 +175,7 @@ export default function DemandDetailsModal({ demand, onClose }) {
                 Billing Rate
               </label>
               <div style={{ marginTop: '0.5rem', fontSize: '1rem', fontWeight: '500', color: '#0f172a' }}>
-                ${demand.billingRate || 'N/A'}
+                ${demand.billingrate || 'N/A'}
               </div>
             </div>
           </div>
@@ -206,15 +206,17 @@ export default function DemandDetailsModal({ demand, onClose }) {
 
           {/* Metadata */}
           <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '1rem', marginTop: '1rem', fontSize: '0.75rem', color: '#94a3b8' }}>
-            <div>Added by: {demand.addedBy || 'N/A'} on {formatDate(demand.addedOn)}</div>
-            <div style={{ marginTop: '0.25rem' }}>Last updated by: {demand.lastUpdatedBy || 'N/A'} on {formatDate(demand.updatedOn)}</div>
+            <div>Added by: {demand.addedby || 'N/A'} on {formatDate(demand.addedon)}</div>
+            <div style={{ marginTop: '0.25rem' }}>Last updated by: {demand.lastupdatedby || 'N/A'} on {formatDate(demand.updatedon)}</div>
           </div>
         </div>
 
         <div className="modal-footer">
-          <button onClick={onClose} className="button button-secondary">
-            Close
-          </button>
+          <div className="CloseButtondiv">
+            <button onClick={onClose} className="button button-secondary">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>

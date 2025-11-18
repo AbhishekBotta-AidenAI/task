@@ -26,16 +26,16 @@ export default function AISearchBar({ onSearch, isLoading }) {
   return (
     <div className="search-bar">
       <h2 className="search-title">
-        Find Employees by Skills
+        Find Demands
       </h2>
       
       <form onSubmit={handleSearch} className="search-form">
         <div className="form-group">
           <label className="form-label">
-            Describe your task or project requirements
+            {/* Describe your task or project requirements */}
           </label>
           <textarea
-            placeholder="e.g., React developer with TypeScript and modern UI experience..."
+            placeholder="e.g., Ux developer with TypeScript and modern UI experience..."
             value={taskDescription}
             onChange={(e) => setTaskDescription(e.target.value)}
             disabled={isLoading}
@@ -47,7 +47,7 @@ export default function AISearchBar({ onSearch, isLoading }) {
           <button
             type="submit"
             disabled={isLoading}
-            className="button button-primary"
+            className="button submitbutton"
           >
             {isLoading ? 'Searching...' : 'Search'}
           </button>
@@ -56,7 +56,7 @@ export default function AISearchBar({ onSearch, isLoading }) {
             type="button"
             onClick={handleReset}
             disabled={isLoading}
-            className="button button-secondary"
+            className="button submitbutton"
           >
             Clear
           </button>

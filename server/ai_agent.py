@@ -45,30 +45,30 @@ def get_ai_agent_recommendation(task_description: str, employees: List[Employee]
         
         # Create the prompt for Gemini
         prompt = f"""
-You are an expert at matching employees to tasks based on their skills and qualifications.
+        You are an expert at matching employees to tasks based on their skills and qualifications.
 
-Given the following task description and list of employees with their details, 
-determine which employees are most suitable to complete this task.
+        Given the following task description and list of employees with their details, 
+        determine which employees are most suitable to complete this task.
 
-TASK DESCRIPTION:
-{task_description}
+        TASK DESCRIPTION:
+        {task_description}
 
-AVAILABLE EMPLOYEES:
-{json.dumps(employees_data, indent=2)}
+        AVAILABLE EMPLOYEES:
+        {json.dumps(employees_data, indent=2)}
 
-Please analyze the task and employee profiles, then respond with:
-1. A brief analysis of the task requirements
-2. A JSON list of employee IDs who are suitable for this task, ranked by suitability (most suitable first)
+        Please analyze the task and employee profiles, then respond with:
+        1. A brief analysis of the task requirements
+        2. A JSON list of employee IDs who are suitable for this task, ranked by suitability (most suitable first)
 
-Format your response as JSON with this structure:
-{{
-    "task_analysis": "Brief analysis of what skills/experience the task requires",
-    "suitable_employee_ids": [id1, id2, id3, ...],
-    "reasoning": "Brief explanation of why these employees match the task"
-}}
+        Format your response as JSON with this structure:
+        {{
+            "task_analysis": "Brief analysis of what skills/experience the task requires",
+            "suitable_employee_ids": [id1, id2, id3, ...],
+            "reasoning": "Brief explanation of why these employees match the task"
+        }}
 
-Important: Return ONLY valid JSON, no additional text.
-"""
+        Important: Return ONLY valid JSON, no additional text.
+        """
         
         # Call Gemini API
         model = genai.GenerativeModel('gemini-2.0-flash')
@@ -138,103 +138,127 @@ def basic_keyword_matching(task_description: str, employees: List[Employee]) -> 
     return [emp for emp, score in scored_employees]
 
 
+
+
+# Ensure your API key is set
+# API_KEY = os.getenv("GEMINI_API_KEY")
+# genai.configure(api_key=API_KEY)
+
+import re
+import os
+
 def generate_sql_from_task(task_description: str, table_name: str = 'demands') -> str | None:
     """
-    Use Gemini to generate a safe SELECT SQL query for the given task description and table.
-    Returns the SQL string or None on failure.
-    The generated SQL MUST be a single SELECT statement (no semicolons, no DDL/DML).
+    Generates safe SQL. 
+    Fixes 'tuple index out of range' by escaping % to %%.
+    Fixes 400 Bad Request by removing trailing semicolons.
     """
-    if not API_KEY:
-        return None
+    # 1. CONFIGURATION
+    # if not API_KEY: return None 
 
-    # Define allowed columns for demands table
     allowed_columns = [
         'id', 'sno', 'project_id', 'account_id', 'role', 'roleCode', 'location', 'revised',
         'originalStartDate', 'allocationEndDate', 'allocationPercentage', 'probability', 'status',
         'resourceMapped', 'comment', 'lastUpdatedBy', 'updatedOn', 'addedBy', 'addedOn',
-        'startMonth', 'billingRate', 'fulfillmentDate', 'created_at'
+        'startMonth', 'billingRate', 'fulfillmentDate'
     ]
 
-    # Try to fetch distinct roles from the demands table so Gemini knows which roles exist
-    roles_list = []
+    # 2. FETCH EXISTING ROLES (Context)
     try:
         rows = execute_read_query(f"SELECT DISTINCT role FROM {table_name} WHERE role IS NOT NULL;")
-        roles_list = [r.get('role') for r in rows if r.get('role')]
+        roles_list = [str(r.get('role')).strip() for r in rows if r.get('role')]
     except Exception:
-        roles_list = []
+        # Fallback roles for testing/safety
+        roles_list = ["Sr. Frontend Developer", "Backend Engineer", "DevOps Specialist", "React Developer"]
 
+    roles_context = "\n".join([f"- {r}" for r in roles_list])
+
+    # 3. PROMPT
     prompt = f"""
-You are an assistant that translates natural language requests into a single, safe PostgreSQL SELECT query.
+You are a PostgreSQL expert. Convert the user's requirement into ONE SAFE SELECT query.
 
-Generate one SELECT statement (no semicolons, no additional text) against the table `{table_name}` to find project demands that match the requirement below.
+### CONTEXT (Existing Roles):
+{roles_context}
 
-Constraints:
-- Output only the SQL SELECT statement and nothing else.
-- The statement must be a single SELECT (no INSERT/UPDATE/DELETE/DROP/etc.).
-- Do not include any backticks, code fences, or surrounding explanation.
-- Only select from these columns: {', '.join(allowed_columns)}.
-- If filters are required, use WHERE conditions only and do not chain multiple statements.
+### INSTRUCTIONS:
+1. **Semantic Matching:** Map skills to roles (e.g., "React" -> "Sr. Frontend Developer").
+2. **Filtering:** Use `ILIKE` with wildcards for flexibility.
+   - Example: `WHERE role ILIKE '%Frontend%'`
+3. **Constraints:**
+   - Table: {table_name}
+   - Columns: {', '.join(allowed_columns)} OR `*`.
+   - NO semicolon at the end.
+   - NO `INSERT`, `UPDATE`, `DELETE`.
 
-Available roles in the table: {', '.join(roles_list) if roles_list else 'None'}
-
-When the user describes a need (for example: "I need a frontend UI design"), map that description to the most appropriate role(s) from the available roles above. If no exact match exists, pick the closest role using keywords (e.g., 'frontend' -> 'Frontend Developer').
-
-TASK DESCRIPTION:
-{task_description}
-
-Example output:
-SELECT id, project_id, role, location, status, allocationPercentage, allocationEndDate FROM demands WHERE status ILIKE '%Open%' AND location ILIKE '%Bangalore%'
+### USER REQUEST:
+"{task_description}"
 """
 
     try:
         model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(prompt)
-        # Debug: print raw Gemini response for troubleshooting
-        try:
-            print("DEBUG: Gemini raw response:\n", response.text)
-        except Exception:
-            print("DEBUG: Gemini raw response unavailable")
+        raw = response.text.strip()
 
-        sql = response.text.strip()
+        # 4. CLEANUP RESPONSE
+        # Remove Markdown fences
+        if "```" in raw:
+            parts = raw.split("```")
+            for part in parts:
+                if "select" in part.lower():
+                    raw = part
+                    break
+        
+        if raw.lower().startswith("sql"):
+            raw = raw[3:].strip()
 
-        # Debug: print cleaned SQL candidate before safety checks
-        try:
-            cleaned_preview = sql
-            # remove possible surrounding code fences for preview
-            if cleaned_preview.startswith("``"):
-                parts = cleaned_preview.split('```')
-                if len(parts) >= 2:
-                    cleaned_preview = parts[1].strip()
-            print("DEBUG: Cleaned SQL candidate:\n", cleaned_preview)
-        except Exception:
-            pass
+        sql = raw.strip()
+        sql = " ".join(sql.split()) # Flatten to one line
+        sql = re.sub(r"from\s+\w+", f"FROM {table_name}", sql, flags=re.IGNORECASE)
 
-        # strip common formatting wrappers
-        if sql.startswith("``"):
-            # remove code fences
-            parts = sql.split('```')
-            if len(parts) >= 2:
-                sql = parts[1].strip()
+        # --- CRITICAL FIX 1: REMOVE TRAILING SEMICOLON ---
+        if sql.endswith(";"):
+            sql = sql[:-1]
 
-        # Basic safety checks
+        # 5. VALIDATION
         lowered = sql.lower()
-        if not lowered.startswith('select'):
+
+        # Must start with SELECT
+        if not lowered.startswith("select"):
+            print("❌ SQL does not start with SELECT")
             return None
-        if ';' in sql:
-            # disallow multiple statements
-            return None
+
+        # Forbidden commands
         forbidden = ['insert ', 'update ', 'delete ', 'drop ', 'alter ', 'create ', 'truncate ']
         if any(f in lowered for f in forbidden):
+            print("❌ Forbidden SQL command found")
             return None
 
-        # Ensure only allowed columns are selected
-        select_clause = sql.split('from')[0].replace('SELECT', '').strip()
-        selected_cols = [c.strip().split(' ')[0] for c in select_clause.split(',')]
-        for col in selected_cols:
-            if col not in allowed_columns:
+        # Column Validation (Allows *)
+        try:
+            match = re.search(r"select\s+(.*?)\s+from", lowered, re.DOTALL)
+            if match:
+                select_clause = match.group(1).strip()
+                if select_clause != "*":
+                    selected_cols = [c.strip().split(" ")[0] for c in select_clause.split(",")]
+                    for col in selected_cols:
+                        clean_col = col.split(".")[-1]
+                        if clean_col not in allowed_columns:
+                            print(f"❌ Column not allowed: {clean_col}")
+                            return None
+            else:
+                print("❌ Could not parse SELECT clause")
                 return None
+        except Exception:
+            return None
 
-        return sql
+        # --- CRITICAL FIX 2: ESCAPE % SIGNS ---
+        # This prevents "tuple index out of range" errors in Python DB drivers
+        final_sql = sql.replace("%", "%%")
+
+        print(f"\nDEBUG FINAL SQL (SENT TO DB):\n{final_sql}\n")
+        
+        return final_sql
+
     except Exception as e:
-        print(f"Error generating SQL with Gemini: {e}")
+        print(f"❌ Gemini SQL generation error: {e}")
         return None

@@ -345,3 +345,204 @@ def list_tables():
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/demands/analytics")
+def analyze_demands():
+    """
+    Analyze the demands table and return insights suitable for charts.
+    Includes:
+    - Role frequency
+    - Location frequency
+    - Status distribution
+    - Demand probability distribution
+    - Monthly demand trend
+    - Avg billing rate per role
+    """
+    try:
+        # Fetch all demand rows
+        rows = execute_read_query("SELECT * FROM demands")
+
+        if not rows:
+            return {"message": "No demand data available", "data": {}}
+
+        df = pd.DataFrame(rows)
+
+        # Normalize column names
+        df.columns = [c.lower() for c in df.columns]
+
+        insights = {}
+
+        # -----------------------------
+        # 1️⃣ Role Demand Count
+        # -----------------------------
+        if "role" in df.columns:
+            role_counts = df["role"].value_counts().reset_index().rename(
+                columns={"index": "role", "role": "count"}
+            )
+            insights["role_demand"] = role_counts.to_dict(orient="records")
+
+        # -----------------------------
+        # 2️⃣ Location Demand Count
+        # -----------------------------
+        if "location" in df.columns:
+            loc_counts = df["location"].value_counts().reset_index().rename(
+                columns={"index": "location", "location": "count"}
+            )
+            insights["location_demand"] = loc_counts.to_dict(orient="records")
+
+        # -----------------------------
+        # 3️⃣ Status Distribution
+        # -----------------------------
+        if "status" in df.columns:
+            status_counts = df["status"].value_counts().reset_index().rename(
+                columns={"index": "status", "status": "count"}
+            )
+            insights["status_distribution"] = status_counts.to_dict(orient="records")
+
+        # -----------------------------
+        # 4️⃣ Probability Distribution
+        # -----------------------------
+        if "probability" in df.columns:
+            prob_counts = df["probability"].value_counts().reset_index().rename(
+                columns={"index": "probability", "probability": "count"}
+            )
+            insights["probability_distribution"] = prob_counts.to_dict(orient="records")
+
+        # -----------------------------
+        # 5️⃣ Monthly Demand Trend (from startMonth or originalStartDate)
+        # -----------------------------
+        if "startmonth" in df.columns:
+            df["startmonth"] = df["startmonth"].astype(str)
+            trend = df["startmonth"].value_counts().sort_index().reset_index()
+            trend.columns = ["month", "count"]
+            insights["monthly_trend"] = trend.to_dict(orient="records")
+
+        elif "originalstartdate" in df.columns:
+            df["month"] = pd.to_datetime(df["originalstartdate"]).dt.to_period("M").astype(str)
+            trend = df["month"].value_counts().sort_index().reset_index()
+            trend.columns = ["month", "count"]
+            insights["monthly_trend"] = trend.to_dict(orient="records")
+
+        # -----------------------------
+        # 6️⃣ Billing Rate per Role
+        # -----------------------------
+        if "billingrate" in df.columns and "role" in df.columns:
+            billing = (
+                df.groupby("role")["billingrate"]
+                .mean()
+                .reset_index()
+                .rename(columns={"billingrate": "avg_billing_rate"})
+                .sort_values("avg_billing_rate", ascending=False)
+            )
+            insights["billing_rate_by_role"] = billing.to_dict(orient="records")
+
+        # -----------------------------
+        # 7️⃣ Allocation Percentage Analysis
+        # -----------------------------
+        if "allocationpercentage" in df.columns:
+            alloc_data = (
+                df["allocationpercentage"]
+                .dropna()
+                .value_counts()
+                .reset_index()
+                .rename(columns={"index": "allocation", "allocationpercentage": "count"})
+            )
+            insights["allocation_distribution"] = alloc_data.to_dict(orient="records")
+
+        return {"message": "Demand analytics processed", "analytics": insights}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/analytics/demands")
+def analytics_demands():
+    """
+    Full analytics for the demands table.
+    Ensures ALL values are converted to native Python types
+    so FastAPI JSON encoder doesn't break.
+    """
+
+    try:
+        rows = execute_read_query("SELECT * FROM demands;")
+        if not rows:
+            return {"error": "No demand data found"}
+
+        df = pd.DataFrame(rows)
+        df = df.replace({np.nan: None, pd.NaT: None})
+
+        # Convert date columns
+        date_cols = ["originalstartdate", "allocationenddate", "fulfillmentdate", "addedon", "updatedon"]
+        for col in date_cols:
+            if col in df.columns:
+                df[col] = pd.to_datetime(df[col], errors="coerce")
+
+        # ---------- SAFE CONVERTER ----------
+        def safe_int_dict(series):
+            return {str(k): int(v) for k, v in series.items()}
+
+        def safe_str_dict(series):
+            return {str(k): str(v) for k, v in series.items()}
+
+        def safe_float(val):
+            return float(val) if val is not None else 0.0
+
+        # ---------- ANALYTICS ----------
+
+        # Role distribution
+        role_dist = (
+            df["role"]
+            .fillna("Unknown")
+            .apply(lambda x: " ".join(str(x).split()))
+            .value_counts()
+        )
+        role_dist = safe_int_dict(role_dist)
+
+        # Location distribution
+        location_dist = safe_int_dict(df["location"].fillna("Unknown").value_counts())
+
+        # Status
+        status_dist = safe_int_dict(df["status"].fillna("Unknown").value_counts())
+
+        # Probability
+        probability_dist = safe_int_dict(df["probability"].fillna("Unknown").astype(str).value_counts())
+
+        # Months
+        if "startmonth" in df.columns:
+            month_dist = safe_int_dict(df["startmonth"].fillna("Unknown").value_counts().sort_index())
+        else:
+            month_dist = {}
+
+        # Accounts
+        account_dist = safe_int_dict(df["account_id"].fillna("Unknown").value_counts())
+
+        # Averages
+        avg_billing = safe_float(df["billingrate"].dropna().mean() if "billingrate" in df else 0)
+        avg_allocation = safe_float(df["allocationpercentage"].dropna().mean() if "allocationpercentage" in df else 0)
+
+        # Top roles
+        top_roles = safe_int_dict(
+            df["role"].fillna("Unknown").value_counts().head(10)
+        )
+
+        return {
+            "roles": role_dist,
+            "locations": location_dist,
+            "status": status_dist,
+            "probability": probability_dist,
+            "months": month_dist,
+            "accounts": account_dist,
+            "avg_billing_rate": avg_billing,
+            "avg_allocation": avg_allocation,
+            "top_roles": top_roles
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/demands")
+def get_all_demands():
+    try:
+        rows = execute_read_query("SELECT * FROM demands ORDER BY id DESC;")
+        return rows   # already Python-native because read_query returns dict
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
